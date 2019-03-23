@@ -63,7 +63,7 @@ $ cont380
 
 <Third Mirror>
 @Main Controler
-[天頂]
+[Zenis]
 [Rot-axis] (Tile-axisは押さなくて良い)
 
 @Third Mirror Control
@@ -74,9 +74,16 @@ Rotation: -2.2222 → [R-Move]
 @Rotator Controller
 [Zero Reset]×2
 
+・電気消す
+
+
 @Sencor
 ・エッジセンサー
 #6個以外にFARという文字があったら木野さんを呼ぶ
+
+**#Edgeではこの文字が出ません！！**
+**#天頂に向けていると、Closeになっている時がある。-> 天頂に向けたらなおった #45 14-5**
+**#多分接触している？？**
 
 @Mode
 M1 Controler StatusでFeedback Control:[Start]
