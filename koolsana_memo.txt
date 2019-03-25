@@ -1,5 +1,7 @@
 ＊Iraf(pyrafメモ)：自分用
 
+
+
 ・等価幅の測定
 splot kif00000320-gain.fits
 1. [a][a]で見てみたい領域を選択
@@ -13,6 +15,7 @@ splot kif00000320-gain.fits
 「d」2回：等価幅(multipleガウシアン)
 「e」2回：等価幅(直接積分)
 「k」：lineのfitting
+
 
 
 ・波長の抽出: apall
@@ -55,4 +58,17 @@ nfind   =                  127  Number of apertures to be found automatically
 
                                 # EXTRACTION PARAMETERS
 (backgro=                 none) Background to subtract
+
+
+9.波長較正
+「ecreident」で、Comparisonデータのいずれか一つについて、慎重に波長同定(Th-Ar)
+
+「ecreident」で、他のComparisonデータについても同定
+     「ecreident comp2 refe=comp1」 
+
+「refspectra」：天体に適用する波長スケールを決定。(sortはutかmjd。groupは空白)
+     「refspectra objectlist refe=@comparison.list」 
+
+「discpor」：波長較正
+一応comparisonについても行う。
 
