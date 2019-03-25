@@ -1,10 +1,30 @@
 ＊岡山3.8mせいめい望遠鏡の観測メモ by Kosuke Namekata
 
+~便利サイト~
+・KOOLS-IFUステータス
+http://www.kusastro.kyoto-u.ac.jp/~kazuya/p-kools/index.html
+#ETCもここで計算できる
+
+・KOOLS-IFU解析方法
+http://www.kusastro.kyoto-u.ac.jp/~kazuya/p-kools/reduction-201604/index.html
+
+・簡易解析
+- HDSのiraf解析マニュアル
+https://www.naoj.org/Observing/DataReduction/Cookbooks/HDSsp_2008may-j.pdf
+- 野津さんのまとめサイト
+https://www.kwasan.kyoto-u.ac.jp/~ynotsu/hdsana/reduction.html
+
+・STARALT
+http://catserver.ing.iac.es/staralt/
+
+・OAO Skymonitor
+http://www.oao.nao.ac.jp/weather/skymonitor/
+
+・GPV
+http://weather-gpv.info/
+＃半日程度のスケールでは上手く予想できる??
+
 ~情報~
-
-#フラットの位置がどれくらいかわるか？
-
-#オフセットの値
 
 #このメモは、2019Aの観測期間(2019/3/22-28)に行われた観測に基づいて書かれています。
 #Image Rotater:[In], グリズム：VPH-683
