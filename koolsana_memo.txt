@@ -15,6 +15,14 @@ splot kif00000320-gain.fits
 「k」：lineのfitting
 
 
+・波長の抽出: apall
+*traceの幅を決める位置は、[line]の数字を調整する
+*apeture設定時：「d」でaperture削除、「n」でapperture追加。
+    番号付け直し：1番にしたい所にカーソルを持っていき、「o」のあと、質問に対し「1」と入力 
+
+
+
+
 ・フラットに対して、アパーチャーの補正をした後：
 PACKAGE = echelle
    TASK = apall
