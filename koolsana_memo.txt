@@ -13,3 +13,38 @@ splot kif00000320-gain.fits
 「d」2回：等価幅(multipleガウシアン)
 「e」2回：等価幅(直接積分)
 「k」：lineのfitting
+
+
+・フラットに対して、アパーチャーの補正をした後：
+PACKAGE = echelle
+   TASK = apall
+    
+input   = kif00000***-cut.fits  List of input images
+(output = kif00000***-apall.fits) List of output spectra
+(format =              echelle) Extracted spectra format #echelle
+(referen=                     ) List of aperture reference images #ここにreferenceとなるflat-imageを入れれば良い
+
+(interac=                  yes) Run task interactively?
+(find   =                  no) Find apertures?
+(recente=                  no) Recenter apertures?
+(resize =                  no) Resize apertures?
+(edit   =                  no) Edit apertures?
+(trace  =                  no) Trace apertures?
+(fittrac=                  no) Fit the traced points interactively?
+(extract=                  yes) Extract spectra?
+(extras =                   no) Extract sky, sigma, etc.?
+(review =                  yes) Review extractions?
+(line   =                INDEF) Dispersion line
+
+                                # DEFAULT APERTURE PARAMETERS
+(lower  =                  -1.) Lower aperture limit relative to center
+(upper  =                   1.) Upper aperture limit relative to center
+
+                                # AUTOMATIC FINDING AND ORDERING PARAMETERS
+nfind   =                  127  Number of apertures to be found automatically
+(minsep =                   5.) Minimum separation between spectra
+(maxsep =                  90.) Maximum separation between spectra
+
+                                # EXTRACTION PARAMETERS
+(backgro=                 none) Background to subtract
+
