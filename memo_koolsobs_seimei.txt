@@ -13,6 +13,8 @@ http://www.kusastro.kyoto-u.ac.jp/~kazuya/p-kools/reduction-201604/index.html
 https://www.naoj.org/Observing/DataReduction/Cookbooks/HDSsp_2008may-j.pdf
 - 野津さんのまとめサイト
 https://www.kwasan.kyoto-u.ac.jp/~ynotsu/hdsana/reduction.html
+- すばる
+https://subarutelescope.org/Observing/DataReduction/mtk/spring10/longslit.pdf
 
 ・STARALT
 http://catserver.ing.iac.es/staralt/
