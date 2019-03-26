@@ -97,6 +97,12 @@ user:admin
 passwd:12345678
 ->power [off]→[on]: reboot
 
+・Rotator-シャックハルトマン
+シャックハルトマンを行うときは、
+Rotator:[IN], Rotator Tracking mode: [El]にしなければならない。
+
+
+
 ~観測手順~
 
 
@@ -268,7 +274,9 @@ Focus Control: 数字を0.1幅で前後させ、ポインティングがいい�
 5. メモ 
 ・たまにImage Rotaterの数値がおかしくなることがある。
 まだ対策はできていないが、
-Rot. Pos= Rot.Offset(90°) - Elevation × 0.5
+Rot. Pos = Rot.Offset(90°) - Elevation × 0.5 @EL
+or
+Rot. Pos = Rot.Offset(90°) - (Elevation+Para. Ang.)*0.5 @Star
 となっていない時は、おかしいということ。
 シャックハルトマンを行う際には、元に戻すことが推奨
 
