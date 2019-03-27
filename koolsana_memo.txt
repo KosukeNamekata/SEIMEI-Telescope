@@ -1,7 +1,36 @@
-＊Iraf(pyrafメモ)：自分用
+＊shell, iraf(pyrafメモ)：自分用
 
+・前原さんのタスクに加えてやるべきこと：
+- フラット割り(別にしなくてもよい。)
+- コズミックレイ除去
+- ゲイン補正
+- フラックスの補正(別にしなくて良い)
+#コンパリソンは、すでに補正済み(apallの結果出てくるもの。)
 
+-------
+kools_ifu_red.sub_cut_overscan(['kif'+filename+'.fits','kif'+filename+'-cut.fits']);
+        iraf.apall('kif'+filename+'-cut.fits',output='kif'+filename+'-1d.fits');        kools_ifu_red.fiber_make_image(['kif'+filename+'-1d.fits',100,2000]);
+        iraf.display('kif'+filename+'-cut.fits',1,zscale='yes')
+        iraf.display('kif'+filename+'-1d-100-2000.fits',2,zscale='no')
 
+        sky_list=calc_obj_pos('kif'+filename+'-1d-100-2000.fits')
+        kools_ifu_red.subtract_sky(['kif'+filename+'-1d.fits', 'kif'+filename+'-1ds.fits',sky_list[0]])
+
+        iraf.refspectra('kif'+filename+'-1ds.fits','yes',referen='ne-1d-f.fits')
+        iraf.dispcor('kif'+filename+'-1ds.fits','kif'+filename+'-wl.fits')
+        iraf.scombine('kif'+filename+'-wl.fits','kif'+filename+'-sum.fits',group='images',combine='sum')
+        print 'Sky S.D.', sky_list[3]
+        print 'X=',sky_list[1],'Y=',sky_list[2]
+        x_str="%.1f" % (-sky_list[1]*1.2)
+        y_str="%.1f" % (sky_list[2]*1.0)
+        iraf.splot('kif'+filename+'-sum.fits',cursor='tmp.com')
+        return [x_str,y_str]
+-------
+
+・ある時間ごとにファイルを実行させるコマンド
+while [ 0 ]; do *.py; sleep 1800;done
+
+@splot
 ・等価幅の測定
 splot kif00000320-gain.fits
 1. [a][a]で見てみたい領域を選択
@@ -11,6 +40,8 @@ splot kif00000320-gain.fits
 「w + j,k,t,b」：カーソルのある位置よりそれぞれ右、左、下、上を拡大
 「c」：全波長域スペクトルの再表示
 
+「h+c」でも等価幅を測ることはできる
+
 「k」2回：等価幅(singleガウシアン)⇒⇒「splot.log」に値が書き込まれる(他の同様コマンドも同様に書き込まれる)。
 「d」2回：等価幅(multipleガウシアン)
 「e」2回：等価幅(直接積分)
@@ -19,8 +50,7 @@ splot kif00000320-gain.fits
 「)」：一つオーダーを進める。
 「(」：一つオーダーを戻す。
 
-
-・波長の抽出: apall
+@apall: １次元スペクトルの抽出
 *traceの幅を決める位置は、[line]の数字を調整する
 *apeture設定時：「d」でaperture削除、「n」でapperture追加。
     番号付け直し：1番にしたい所にカーソルを持っていき、「o」のあと、質問に対し「1」と入力 
