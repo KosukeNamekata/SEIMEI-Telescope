@@ -1,0 +1,55 @@
+＊Oister’s Data Analysis
+
+・データのダウンロード
+https://oister.kwasan.kyoto-u.ac.jp/shared-data/ToO/
+
+$ wget -r -l 1 --user=oister-data --password='0!ster_DATA' https://oister.kwasan.kyoto-u.ac.jp/shared-data/ToO/ADLeo_MITSuME/
+でとってこれる。
+Username=oister-data
+PASSWD=0!ster_DATA
+
+#Linuxのcommandは、-を2つつけると、=がいる。
+#-を1つだと、=がいらない。
+
+
+・データの解凍
+tar.gz 解凍方法
+$ tar -zxvf xxxx.tar.gz
+
+OISTERのデータは、基本的に別々に保存されているので、まずはcatで繋げて、その後解凍する必要がある。
+$ cat AD_LEO_190323_** > AD_LEO_190323.tar.gz
+$ tar -zxvf AD_LEO_190323.tar.gz
+
+
+・データの中身
+中身には基本的に、
+(1) target directory
+(2) dark directory
+(3) bias frame (already dark sabtracted fits-file; e.g. bpmask_G.fits)
+
+
+
+＊測光の方法(1): iraf command
+
+
+
+
+
+
+＊測光の方法(2): AstroImageJ
+
+・option + click -> 
+・Analyze -> plot seeing profile [opt+星クリック]->アパーチャー決定
+・oo-> First slice-Last sliceを全部へ
+->[Vary photometer…]にチェックマーク
+-> Place aparture
+#Use single step mode
+#Use previous 
+
+・Save Table
+・Source-Skyの中にfluxがはいっている。
+
+#magnitude = -2.5*log10(flux)
+
+
+
