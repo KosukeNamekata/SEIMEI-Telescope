@@ -1,6 +1,6 @@
 ＊Oister’s Data Analysis
 
-・データのダウンロード
+＊データのダウンロード
 https://oister.kwasan.kyoto-u.ac.jp/shared-data/ToO/
 
 $ wget -r -l 1 --user=oister-data --password='0!ster_DATA' https://oister.kwasan.kyoto-u.ac.jp/shared-data/ToO/ADLeo_MITSuME/
@@ -12,7 +12,7 @@ PASSWD=0!ster_DATA
 #-を1つだと、=がいらない。
 
 
-・データの解凍
+＊データの解凍
 tar.gz 解凍方法
 $ tar -zxvf xxxx.tar.gz
 
@@ -21,15 +21,96 @@ $ cat AD_LEO_190323_** > AD_LEO_190323.tar.gz
 $ tar -zxvf AD_LEO_190323.tar.gz
 
 
-・データの中身
+＊データの中身
 中身には基本的に、
 (1) target directory
 (2) dark directory
 (3) bias frame (already dark sabtracted fits-file; e.g. bpmask_G.fits)
 
 
+＊下処理
+#オーバースキャン処理 #3-1020
+ls AD_LEO/MTOTG*.fits > frame-raw.list
+!sed -e s/.fits/-cut.fits/ frame-raw.list > frame-cut.list
+!sed -e s/.fits/.fits[3:1020,3:1020]/ frame-raw.list > frame-cut-in.list
+imcopy @frame-cut-in.list @frame-cut.list
+imcopy flat_G.fits[3:1020,3:1020] flat_G-cut.fits
+print("\007")
+
+#Bias reduction
+#バイアスリストの作成
+ls DARK5/MTOTG*.fits > dark-raw.list
+!sed -e s/.fits/-cut.fits/ dark-raw.list > dark-cut.list
+!sed -e s/.fits/.fits[3:1020,3:1020]/ dark-raw.list > dark-cut-in.list
+imcopy @dark-cut-in.list @dark-cut.list
+
+#バイアスフレーム作成
+imcombine @dark-cut.list dark-comb-cut.fits combine=median
+
+#バイアスひき
+!sed -e s/-cut.fits/-bias.fits/ frame-cut.list > obs-bias.list
+!awk '{print "rm -f " $1}' obs-bias.list | sh
+imarith @frame-cut.list - dark-comb-cut.fits @obs-bias.list
+
+#Flat reduction
+#Flatのバイアス処理はすでに終わっているようなので注意！！
+ls AD_LEO/MTOTG*-bias.fits > obs-flat-in.list
+!sed -e s/-bias.fits/.f.fits/ obs-flat-in.list > obs-flat-t.list
+!sed -e s/MTOTG00020/G/ obs-flat-t.list > obs-flat.list
+!awk '{print "rm -f " $1}' obs-flat.list | sh
+imarith @obs-flat-in.list / flat_G-cut.fits @obs-flat.list
+
+
 
 ＊測光の方法(1): iraf command
+
+#必要なものをインストール/ダウンロードする
+noao
+digiphot
+daophot
+
+
+#天体を特定する
+!sed -e s/.fits/.fits.coo.1/ obs-flat.list > obs-phot.list
+!sed -e s/.f.fits/.mag.1/ obs-flat.list > obs-mag.list
+
+
+daofind @obs-flat.list output=@obs-phot.list fwhmpsf=4.0 sigma=10 threshold=5 inter=no verify=no verbose=no
+#imexamでパラメータをチェックできる。
+    #j : column 方向 (x方向) に gaussian fit したときの FWHM
+    #k : row 方向 (y 方向) に gaussian fit したときの FWHM
+    #FWHM を調べるには、他にも a, r コマンドなどを使う方法もある。
+#これで背景のばらつき具合を調べる　→ sigam
+#thresholdはsigma3くらいでいいでしょうか。
+
+
+#Default
+#> daofind @u30_df.list default fwhmpsf=6.0 sigma=2 threshold=3
+
+
+#Comment
+#fwhmpsfは星像のFWHM、sigmaは背景カウントのばらつきの大きさ、thresholdは
+#何-sigmaまで星として検出するかの設定値です。
+
+#!mv *.coo.1 AD_LEO/
+
+
+
+phot @obs-flat.list @obs-phot.list output=@obs-mag.list fwhmpsf=3 aper =4.5 ann=5.5 dann=5 inter=no verify=no verbose=no
+#DWHMSFは大体の星の光を集めてくる幅、アパーチャは測光する場所、annはskyのばらつきを測定する範囲らしい。
+#大体、アパーチャはFWHM*1.5, annはその１ピクセル先の方がいいと言われているらしい。by磯貝さん談
+
+#Default
+#> phot @u30_df.list @u30_df.coo.list default
+
+#Comment
+#u30_df.listはFITSファイルのリスト、u30_df.coo.listはdaofindで出てきた
+#xxx.fits.coo.1というファイルのリストです。
+
+#どうやら作業しているディレクトリでしないといけないらしい。
+cd AD_LEO
+#これは一瞬でできる。
+ls *.mag.1 | sh ../../prog.sh
 
 
 
