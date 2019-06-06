@@ -1,0 +1,104 @@
+NICERのデータ解析
+
+
+＊大体の流れ
+1. イベントデータ(.evt) → (xselect) → cleaned event data 
+2. 
+
+
+＊HEASOFT install
+
+・パッケージインストールの方法
+$ sudo port install **/brew install **
+#gcc: GNU Compiler Collection: GCCとは、GNUプロジェクトが開発および配布している、
+#さまざまなプログラミング言語のコンパイラ集のことである。
+$ gcc hello.c 
+$ ./a.out
+
+
+＊XSELECT in HEASoft Software
+
+・参考) SUZAKUの解析マニュアルを見るとわかりやすい。
+http://cosmic.riken.jp/suzaku/help/guide/fstep_web/fstep.html
+
+
+・「すざく」first step マニュアルのスペクトル解析の章
+http://cosmic.riken.jp/suzaku/help/guide/fstep_web/node7.html
+
+
+・ファイルリスト
+adleokgfilt.evt #.evt（event file?）
+adleokgfilt.pha  #.pha (ソースファイル) 
+adleokgfiltkpcl.mkf2 #.mkf2 (?)
+backadleokgfilt.pha
+
+
+$ xselect
+XSEL> set datadir .
+XSEL> read event adleokgfilt.evt #イベントファイルの読み込み
+XSEL> set binsize 1 #ビンサイズを指定する？つまりここではbin = 1sec
+XSEL> extract curve #ライトカーブを抜き出す
+XSEL> plot curve 
+#PGPLOT file/type:
+#と聞かれるので出力先を選択していなければ、/XWINDOWと入力
+
+
+XSEL> filter pha_cutoff 547 1644
+#でエネルギー幅をplotできるらしいが、単位がPIとは？
+#XSEL> filter time cursor #で、時間はばを指定できるらしい
+#XSEL> clear time cursor #でリセット
+
+#set pharebin 1 #出力スペクトルファイルの bin まとめ数
+#show status #それぞれのステータスをチェックできる
+
+
+XSEL> set phaname PI > extract spectrum > plot spectrum
+XSEL> save curve
+#save curve lc_xis0_3x3.fits #とすれば、fitsfileに保存
+XSEL> plot curve
+ PLT> wdata lc_xis0_3x3
+ PLT> whead lc_xis0_3x3
+#でpdp形式で保存できる。
+
+
+XSEL> extract spectrum
+XSEL> save spectrum
+#save spec src.pha #phaファイル(ソースファイルとして抽出して、xspecで解析)
+XSEL> exit
+
+
+＊lcurve in HEASoft Software
+
+・ログイン：
+$ lcurve
+・自動で作ってくれるshell script：
+$ sh nicer_process_plotlc.sh ***.fits
+などとすれば良い。
+
+
+
+＊XSPEC in HEASoft Software
+
+https://qiita.com/yamadasuzaku/items/0c5f28438f7342b63975
+#先ずはこれを一読しよう！
+
+・ログイン
+$ xspec
+
+・データ読み込み
+XSPEC>data 1:1 xis0_3_srcmath.pha (ソースファイル) 
+XSPEC>back 1 xis0_3_bgd.pha (バックグラウンドファイル) 
+XSPEC>resp 1 xis0_3_rsp.rmf (レスポンスファイル) 
+XSPEC>arf 1 xis0_3_arf.arf (arfファイル)
+
+・どんなデータを読み込んだかを確認したいとき
+XSPEC>show files
+
+
+
+＊便利なコマンド
+
+・Headerが見たい
+$fdump filename
+
+
