@@ -43,9 +43,14 @@ adleokgfilt.pha  #.pha (ソースファイル) 
 adleokgfiltkpcl.mkf2 #.mkf2 (?)
 backadleokgfilt.pha
 
+#エネルギーは0.4-8.0 keVがバックグラウンドの影響をあまり受けない安全な範囲
 
 
 ＊XSELECT in HEASoft Software
+
+・NICER解析
+https://heasarc.gsfc.nasa.gov/docs/nicer/nicer_analysis.html
+
 
 ・参考) SUZAKUの解析マニュアルを見るとわかりやすい。
 http://cosmic.riken.jp/suzaku/help/guide/fstep_web/fstep.html
