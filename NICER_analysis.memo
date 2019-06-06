@@ -2,8 +2,9 @@ NICERのデータ解析
 
 
 ＊大体の流れ
-1. イベントデータ(.evt) → (xselect) → cleaned event data 
-2. 
+1. イベントデータ(.evt) → (xselect) → cleaned event data  → (xselect) → LC file, PI file
+2.1 LC file  → (xspec) → spectral analysis
+2.2 PI file  → (xronos) → 時系列データ解析
 
 
 ＊HEASOFT install
@@ -16,6 +17,26 @@ $ gcc hello.c
 $ ./a.out
 
 
+・キャリブレーションデータの設定: 
+- キャリブレーションデータのありか
+https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/nicer/
+#ISSの姿勢の補正や、スペクトル解析に必要なレスポンスファイル（エネルギーの応答関数といったところ）など必要な較正ファイル
+
+ー 設定方法
+https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/caldb_intro.html
+
+
+・データのありか・種類
+- データのありか
+
+- 種類
+adleokgfilt.evt #.evt（event file?）
+adleokgfilt.pha  #.pha (ソースファイル) 
+adleokgfiltkpcl.mkf2 #.mkf2 (?)
+backadleokgfilt.pha
+
+
+
 ＊XSELECT in HEASoft Software
 
 ・参考) SUZAKUの解析マニュアルを見るとわかりやすい。
@@ -25,12 +46,6 @@ http://cosmic.riken.jp/suzaku/help/guide/fstep_web/fstep.html
 ・「すざく」first step マニュアルのスペクトル解析の章
 http://cosmic.riken.jp/suzaku/help/guide/fstep_web/node7.html
 
-
-・ファイルリスト
-adleokgfilt.evt #.evt（event file?）
-adleokgfilt.pha  #.pha (ソースファイル) 
-adleokgfiltkpcl.mkf2 #.mkf2 (?)
-backadleokgfilt.pha
 
 
 $ xselect
