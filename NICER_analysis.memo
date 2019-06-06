@@ -1,7 +1,15 @@
 NICERのデータ解析
 
+・今日聞くべきこと
+- データのありか
+- 
 
-＊大体の流れ
+＊Overview
+NICER観測のスケジュール
+https://heasarc.gsfc.nasa.gov/docs/nicer/schedule/nicer_sts_current.html
+
+
+＊解析の大体の流れ
 1. イベントデータ(.evt) → (xselect) → cleaned event data  → (xselect) → LC file, PI file
 2.1 LC file  → (xspec) → spectral analysis
 2.2 PI file  → (xronos) → 時系列データ解析
