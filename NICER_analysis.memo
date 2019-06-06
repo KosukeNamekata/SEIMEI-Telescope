@@ -18,12 +18,20 @@ $ ./a.out
 
 
 ・キャリブレーションデータの設定: 
-- キャリブレーションデータのありか
+- キャリブレーションデータCALDB(HEASARC's calibration database)
 https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/nicer/
 #ISSの姿勢の補正や、スペクトル解析に必要なレスポンスファイル（エネルギーの応答関数といったところ）など必要な較正ファイル
 
+
 ー 設定方法
 https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/caldb_intro.html
+$ export CALDB="/Users/kosuke/caldb"
+$ cd CALDB
+$ wget https://heasarc.gsfc.nasa.gov/FTP/caldb/software/tools/caldb_setup_files.tar.Z
+$ tar -zxvf caldb_setup_files.tar.Z
+
+- チェック方法
+$caldbinfo INST nicer xti
 
 
 ・データのありか・種類
