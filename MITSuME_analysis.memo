@@ -83,6 +83,8 @@ daofind @obs-flat.list output=@obs-phot.list fwhmpsf=4.0 sigma=10 threshold=5 in
 #これで背景のばらつき具合を調べる　→ sigam
 #thresholdはsigma3くらいでいいでしょうか。
 
+MITSUME G-band
+
 
 #Default
 #> daofind @u30_df.list default fwhmpsf=6.0 sigma=2 threshold=3
