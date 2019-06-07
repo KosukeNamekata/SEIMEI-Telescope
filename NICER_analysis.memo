@@ -73,6 +73,14 @@ http://cosmic.riken.jp/suzaku/help/guide/fstep_web/fstep.html
 http://cosmic.riken.jp/suzaku/help/guide/fstep_web/node7.html
 
 
+＊Barycentric julian date
+・Xselectで抽出する前に、barycentric julian dateに直しておく必要がある。
+
+＄ barycorr infile=./${TIME}/xti/event_cl/ni${TIME}_0mpu7_cl.evt 
+outfile=./${TIME}/xti/event_cl/ni${TIME}_0mpu7_cl_bary.evt 
+orbitfiles="./${TIME}/auxil/ni${TIME}.orb" ra=${RA} dec=${DEC} refframe=ICRS
+
+
 
 $ Xselect
 
@@ -91,6 +99,10 @@ XSEL> set binsize 1 #ビンサイズを指定する？つまりここではbin =
 
 ・時間幅
 XSEL> filter time cursor #で、時間はばを指定できるらしい
+XSEL> r x
+XSEL> q
+-> x #この辺忘れたから、またやってみよう。
+
 #XSEL> clear time cursor #でリセット
 #他にも、filter time fileなどもできるので、spectraを作成するときは、最終的にはfileでカットするのがいいかも。
 
@@ -116,9 +128,13 @@ plt> we output_lc #とすると、output_lc.qdpというデータファイルと
 #show status #それぞれのステータスをチェックできる
 
 
-＊ライトカーブの抽出
-XSEL> ext spect #イベントデータから、ライトカーブを抜き出す
+＊スペクトルの抽出
+・抽出、plot、データ保存
+XSEL> ext spec #イベントデータから、ライトカーブを抜き出す
+
+XSEL> log x y on #log scaleにてplotする。
 XSEL> pl spec
+
 
 XSEL> set phaname PI > extract spectrum > plot spectrum
 XSEL> save curve
