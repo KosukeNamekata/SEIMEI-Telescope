@@ -166,6 +166,8 @@ $ lcurve
 
 
 
+
+
 4.2 Xspec in HEASoft Software
 https://qiita.com/yamadasuzaku/items/0c5f28438f7342b63975
 
@@ -186,5 +188,7 @@ XSPEC>arf 1 xis0_3_arf.arf (arfファイル)
 ・どんなデータを読み込んだかを確認したいとき
 XSPEC>show files
 
+
 ・Headerが見たい
 $fdump filename
+
