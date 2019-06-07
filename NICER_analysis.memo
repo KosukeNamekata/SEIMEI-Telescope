@@ -108,12 +108,13 @@ XSEL> set binsize 1 #ビンサイズを指定する？つまりここではbin =
 
 ・時間幅
 XSEL> filter time cursor #で、時間はばを指定できるらしい
-XSEL> r x
-XSEL> q
+PLT> r x 34e4 37e4 #range x
+PLT> q #を押すと、反映されるらしい。
 -> x #この辺忘れたから、またやってみよう。
 
 #XSEL> clear time cursor #でリセット
 #他にも、filter time fileなどもできるので、spectraを作成するときは、最終的にはfileでカットするのがいいかも。
+
 
 ・波長bin
 XSEL> filter pha_cutoff 50 800 # in the unit of ev/10
@@ -130,7 +131,7 @@ PGPLOT> file/type: /xw #と聞かれるので出力先を選択していなけ�
 
 ・抽出データ保存
 plt> we output_lc #とすると、output_lc.qdpというデータファイルと、output_lc.pcoという設定ファイルができる。
-XSEL> save output #とすると、output.lcというfits fileが出来上がる。
+XSEL> save curve -> output #とすると、output.lcというfits fileが出来上がる。
 -> これを、lcurveで調整することで、ちゃんとしたライトカーブができるようになる！！
 
 #Xselectなどから出るときは、[exit], PLTから出るときは、[q]
@@ -147,8 +148,15 @@ XSEL> ext spec #イベントデータから、ライトカーブを抜き出す
 XSEL> log x y on #log scaleにてplotする。
 XSEL> pl spec
 PLT> we ** # **.qdpという読み取り可能なqdpファイルが出来上がる。
-XSEL> save output #とすると、output.phaというfits-fileが出来上がる。
+XSEL> save spec -> output #とすると、output.phaというfits-fileが出来上がる。
 
+
+
+＊ext all
+XSEL> ext all
+XSEL> ext eve
+XSEL> save all
+XSEL> save eve
 
 
 
