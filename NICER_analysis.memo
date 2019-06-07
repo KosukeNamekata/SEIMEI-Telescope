@@ -5,12 +5,6 @@ NICER観測のスケジュール
 https://heasarc.gsfc.nasa.gov/docs/nicer/schedule/nicer_sts_current.html
 
 
-＊解析の大体の流れ
-1. イベントデータ(.evt) → (nicer独自のosoft) → cleaned event data  → (xselect) → LC file, PI file
-2.1 PI file  → (xspec) → spectral analysis
-2.2 LC file  → (xronos, lcurve) → 時系列データ解析
-
-
 ＊HEASOFT install
 
 ・便利なcommand
@@ -61,19 +55,31 @@ backadleokgfilt.pha #.pha (background's spectra data)
 (注意2)エネルギーは0.4-8.0 keV(場合によっては、0.3-10keV)がバックグラウンドの影響をあまり受けない安全な範囲
 
 
+
+
+
+
+
+＊解析の大体の流れ
+1. データのキャリブレーション
+2. BJD補正
+3. イベントデータ(.evt) → (nicer独自のosoft) → cleaned event data  → (xselect) → LC file, PI file
+4.1 PI file  → (xspec) → spectral analysis
+4.2 LC file  → (xronos, lcurve) → 時系列データ解析
+
+
 ＊XSELECT in HEASoft Software
 
 ・NICER解析
 https://heasarc.gsfc.nasa.gov/docs/nicer/nicer_analysis.html
 
-
 (参考) SUZAKUの解析マニュアルを見るとわかりやすい。
 http://cosmic.riken.jp/suzaku/help/guide/fstep_web/fstep.html
-・「すざく」first step マニュアルのスペクトル解析の章
-http://cosmic.riken.jp/suzaku/help/guide/fstep_web/node7.html
 
 
-＊Barycentric julian date
+
+2. Barycentric julian date
+
 ・Xselectで抽出する前に、barycentric julian dateに直しておく必要がある。
 
 ＄ barycorr infile=./${TIME}/xti/event_cl/ni${TIME}_0mpu7_cl.evt 
@@ -82,6 +88,9 @@ orbitfiles="./${TIME}/auxil/ni${TIME}.orb" ra=${RA} dec=${DEC} refframe=ICRS
 
 
 
+3. Xselectによるデータの抽出
+
+@terminal
 $ Xselect
 
 ・最初に、
@@ -112,6 +121,7 @@ XSEL> filter pha_cutoff 50 800 # in the unit of ev/10
 #でエネルギー幅をplotできるらしいが、単位がPIとは？
 
 
+
 ＊ライトカーブの抽出
 ・抽出→プロット
 XSEL> ext curve #イベントデータから、ライトカーブを抜き出す
@@ -120,12 +130,14 @@ PGPLOT> file/type: /xw #と聞かれるので出力先を選択していなけ�
 
 ・抽出データ保存
 plt> we output_lc #とすると、output_lc.qdpというデータファイルと、output_lc.pcoという設定ファイルができる。
-->これを、lcurveで調整することで、ちゃんとしたライトカーブができるようになる！！
+XSEL> save output #とすると、output.lcというfits fileが出来上がる。
+-> これを、lcurveで調整することで、ちゃんとしたライトカーブができるようになる！！
 
 #Xselectなどから出るときは、[exit], PLTから出るときは、[q]
 #設定を変えたら、いちいちextをしなければならない！
 #set pharebin 1 #出力スペクトルファイルの bin まとめ数
 #show status #それぞれのステータスをチェックできる
+
 
 
 ＊スペクトルの抽出
@@ -134,39 +146,21 @@ XSEL> ext spec #イベントデータから、ライトカーブを抜き出す
 
 XSEL> log x y on #log scaleにてplotする。
 XSEL> pl spec
+PLT> we ** # **.qdpという読み取り可能なqdpファイルが出来上がる。
+XSEL> save output #とすると、output.phaというfits-fileが出来上がる。
 
 
-XSEL> set phaname PI > extract spectrum > plot spectrum
-XSEL> save curve
-#save curve lc_xis0_3x3.fits #とすれば、fitsfileに保存
-XSEL> plot curve
- PLT> wdata lc_xis0_3x3
- PLT> whead lc_xis0_3x3
-#でpdp形式で保存できる。
 
 
-XSEL> extract spectrum
-XSEL> save spectrum
-#save spec src.pha #phaファイル(ソースファイルとして抽出して、xspecで解析)
-XSEL> exit
+4.1 lcurve in HEASoft Software
 
-
-＊lcurve in HEASoft Software
-
-・ログイン：
 $ lcurve
-・自動で作ってくれるshell script：
-$ sh nicer_process_plotlc.sh ***.fits
-などとすれば良い。
 
 
 
-＊XSPEC in HEASoft Software
-
+4.2 Xspec in HEASoft Software
 https://qiita.com/yamadasuzaku/items/0c5f28438f7342b63975
-#先ずはこれを一読しよう！
 
-・ログイン
 $ xspec
 
 ・データ読み込み
@@ -175,14 +169,14 @@ XSPEC>back 1 xis0_3_bgd.pha (バックグラウンドファイル) 
 XSPEC>resp 1 xis0_3_rsp.rmf (レスポンスファイル) 
 XSPEC>arf 1 xis0_3_arf.arf (arfファイル)
 
+
+
+
+
+5. 便利なコマンド
+
 ・どんなデータを読み込んだかを確認したいとき
 XSPEC>show files
 
-
-
-＊便利なコマンド
-
 ・Headerが見たい
 $fdump filename
-
-
