@@ -89,8 +89,8 @@ XSEL> plot curve
 #と聞かれるので出力先を選択していなければ、/XWINDOWと入力
 
 
-XSEL> filter pha_cutoff 547 1644
-#
+XSEL> filter pha_cutoff 50 800 # in the unit of ev/10
+#0.5kev-8kev(場合によっては、10kev) #0.2-12[
 #でエネルギー幅をplotできるらしいが、単位がPIとは？
 #XSEL> filter time cursor #で、時間はばを指定できるらしい
 #XSEL> clear time cursor #でリセット
