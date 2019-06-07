@@ -2,6 +2,7 @@ NICERのデータ解析
 
 ・今日聞くべきこと
 - データのありか
+https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dnicermastr&Action=More+Options
 - 
 
 ＊Overview
@@ -10,12 +11,17 @@ https://heasarc.gsfc.nasa.gov/docs/nicer/schedule/nicer_sts_current.html
 
 
 ＊解析の大体の流れ
-1. イベントデータ(.evt) → (xselect) → cleaned event data  → (xselect) → LC file, PI file
-2.1 LC file  → (xspec) → spectral analysis
-2.2 PI file  → (xronos) → 時系列データ解析
+1. イベントデータ(.evt) → (nicer独自のosoft) → cleaned event data  → (xselect) → LC file, PI file
+2.1 PI file  → (xspec) → spectral analysis
+2.2 LC file  → (xronos) → 時系列データ解析
 
 
 ＊HEASOFT install
+
+・便利なcommand
+https://heasarc.gsfc.nasa.gov/docs/nicer/data_analysis/nicer_analysis_guide.html
+-> row data -> clean data
+
 
 ・パッケージインストールの方法
 $ sudo port install **/brew install **
@@ -44,12 +50,16 @@ $caldbinfo INST nicer xti
 
 ・データのありか・種類
 - データのありか
+https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dnicermastr&Action=More+Options
+-> wgetのcommandでダウンロード
 
 - 種類
-adleokgfilt.evt #.evt（event file?）
-adleokgfilt.pha  #.pha (ソースファイル) 
-adleokgfiltkpcl.mkf2 #.mkf2 (?)
-backadleokgfilt.pha
+adleokgfilt.evt #.evt（event file=spectra, light curve）
+adleokgfilt.pha  #.pha (source's spectra data)
+adleokgfiltkpcl.mkf2 #.mkf2 (-> 検出器の観測している時の状態、どこを向いているのか？太陽がどこにあるのか？)
+backadleokgfilt.pha #.pha (background's spectra data)
+
+#NICERはimaging機能が付いていないので、天体が写っていないところのBGdataを取ってきてる -> backadleofilt.pha
 
 #エネルギーは0.4-8.0 keVがバックグラウンドの影響をあまり受けない安全な範囲
 
@@ -71,7 +81,7 @@ http://cosmic.riken.jp/suzaku/help/guide/fstep_web/node7.html
 
 $ xselect
 XSEL> set datadir .
-XSEL> read event adleokgfilt.evt #イベントファイルの読み込み
+XSEL> read event adleokgfilt.evt #イベントファイルの読み込み #スザクの時に作られたので、defaultがSUZAKUになっている。
 XSEL> set binsize 1 #ビンサイズを指定する？つまりここではbin = 1sec
 XSEL> extract curve #ライトカーブを抜き出す
 XSEL> plot curve 
@@ -80,6 +90,7 @@ XSEL> plot curve
 
 
 XSEL> filter pha_cutoff 547 1644
+#
 #でエネルギー幅をplotできるらしいが、単位がPIとは？
 #XSEL> filter time cursor #で、時間はばを指定できるらしい
 #XSEL> clear time cursor #でリセット
