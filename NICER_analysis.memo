@@ -1,10 +1,5 @@
 NICERのデータ解析
 
-・今日聞くべきこと
-- データのありか
-https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dnicermastr&Action=More+Options
-- 
-
 ＊Overview
 NICER観測のスケジュール
 https://heasarc.gsfc.nasa.gov/docs/nicer/schedule/nicer_sts_current.html
@@ -13,7 +8,7 @@ https://heasarc.gsfc.nasa.gov/docs/nicer/schedule/nicer_sts_current.html
 ＊解析の大体の流れ
 1. イベントデータ(.evt) → (nicer独自のosoft) → cleaned event data  → (xselect) → LC file, PI file
 2.1 PI file  → (xspec) → spectral analysis
-2.2 LC file  → (xronos) → 時系列データ解析
+2.2 LC file  → (xronos, lcurve) → 時系列データ解析
 
 
 ＊HEASOFT install
@@ -53,15 +48,17 @@ $caldbinfo INST nicer xti
 https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dnicermastr&Action=More+Options
 -> wgetのcommandでダウンロード
 
+
 - 種類
 adleokgfilt.evt #.evt（event file=spectra, light curve）
 adleokgfilt.pha  #.pha (source's spectra data)
 adleokgfiltkpcl.mkf2 #.mkf2 (-> 検出器の観測している時の状態、どこを向いているのか？太陽がどこにあるのか？)
 backadleokgfilt.pha #.pha (background's spectra data)
 
-#NICERはimaging機能が付いていないので、天体が写っていないところのBGdataを取ってきてる -> backadleofilt.pha
+(注意1)NICERはimaging機能が付いていないので、天体が写っていないところのBGdataを取ってきてる -> backadleofilt.pha
+#基本的に、こういったキャリブレーションはNICER team内のみで共有されている。
 
-#エネルギーは0.4-8.0 keVがバックグラウンドの影響をあまり受けない安全な範囲
+(注意2)エネルギーは0.4-8.0 keV(場合によっては、0.3-10keV)がバックグラウンドの影響をあまり受けない安全な範囲
 
 
 ＊XSELECT in HEASoft Software
@@ -70,34 +67,58 @@ backadleokgfilt.pha #.pha (background's spectra data)
 https://heasarc.gsfc.nasa.gov/docs/nicer/nicer_analysis.html
 
 
-・参考) SUZAKUの解析マニュアルを見るとわかりやすい。
+(参考) SUZAKUの解析マニュアルを見るとわかりやすい。
 http://cosmic.riken.jp/suzaku/help/guide/fstep_web/fstep.html
-
-
 ・「すざく」first step マニュアルのスペクトル解析の章
 http://cosmic.riken.jp/suzaku/help/guide/fstep_web/node7.html
 
 
 
-$ xselect
-XSEL> set datadir .
-XSEL> read event adleokgfilt.evt #イベントファイルの読み込み #スザクの時に作られたので、defaultがSUZAKUになっている。
+$ Xselect
+
+・最初に、
+> Enter session name >[xsel] 
+> Use saved session? >[yes]
+と聞かれる。もし、今までの作業の続きをしたいのであれば、xsel_**の中に設定ファイルが色々残っているので、そこから読み取れる。
+
+・データ読み取り
+#XSEL> set datadir . #dataがあるディレクトリ内で処理しているときは、あまり関係ない。
+XSEL> read eve adleokgfilt.evt #イベントファイルの読み込み #スザクの時に作られたので、defaultがSUZAKUになっている。
+
+・時間bin
 XSEL> set binsize 1 #ビンサイズを指定する？つまりここではbin = 1sec
-XSEL> extract curve #ライトカーブを抜き出す
-XSEL> plot curve 
-#PGPLOT file/type:
-#と聞かれるので出力先を選択していなければ、/XWINDOWと入力
+#ちなみに、この後はこれ以下の時間分解能にすることはできないので、ここでできるだけ時間分解能を高く保っておく必要がある。
 
+・時間幅
+XSEL> filter time cursor #で、時間はばを指定できるらしい
+#XSEL> clear time cursor #でリセット
+#他にも、filter time fileなどもできるので、spectraを作成するときは、最終的にはfileでカットするのがいいかも。
 
+・波長bin
 XSEL> filter pha_cutoff 50 800 # in the unit of ev/10
 #0.5kev-8kev(場合によっては、10kev) #0.2-12[
 #でエネルギー幅をplotできるらしいが、単位がPIとは？
-#XSEL> filter time cursor #で、時間はばを指定できるらしい
-#XSEL> clear time cursor #でリセット
 
+
+＊ライトカーブの抽出
+・抽出→プロット
+XSEL> ext curve #イベントデータから、ライトカーブを抜き出す
+XSEL> pl curve 
+PGPLOT> file/type: /xw #と聞かれるので出力先を選択していなければ、/XWINDOWと入力
+
+・抽出データ保存
+plt> we output_lc #とすると、output_lc.qdpというデータファイルと、output_lc.pcoという設定ファイルができる。
+->これを、lcurveで調整することで、ちゃんとしたライトカーブができるようになる！！
+
+#Xselectなどから出るときは、[exit], PLTから出るときは、[q]
+#設定を変えたら、いちいちextをしなければならない！
 #set pharebin 1 #出力スペクトルファイルの bin まとめ数
 #show status #それぞれのステータスをチェックできる
 
+
+＊ライトカーブの抽出
+XSEL> ext spect #イベントデータから、ライトカーブを抜き出す
+XSEL> pl spec
 
 XSEL> set phaname PI > extract spectrum > plot spectrum
 XSEL> save curve
