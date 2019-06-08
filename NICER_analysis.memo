@@ -171,6 +171,21 @@ $ lcurve
 4.2 Xspec in HEASoft Software
 https://qiita.com/yamadasuzaku/items/0c5f28438f7342b63975
 
+4.2.1 キャリブレーションデータをフォルダに置く
+https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/data/nicer/xti/index.html
+から、**.arf, **.rmfを持ってくる。 -> gain補正を行うためのソフト
+
+
+4.2.2 grppha: 波長方向に光子をgrouping
+
+$ grppha
+Please enter PHA filename[**.pha] **.pha 
+Please enter output filename[**.pha] **.pha
+
+GRPPHA[]　group min 20 #20個の光子で1binとする。
+
+
+4.2.3 Xspec
 $ xspec
 
 ・データ読み込み
