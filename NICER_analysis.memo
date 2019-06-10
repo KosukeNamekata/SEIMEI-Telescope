@@ -162,18 +162,28 @@ XSEL> save eve
 
 4.1 lcurve in HEASoft Software
 
-$ lcurve
+$ lcurve ->　そしたら、色々聞かれる。
 
+Name of the window file ('-' for default window)[-] 
+Newbin Time or negative rebinning[4.6692607009327] 64
+Number of Newbins/Interval[115963] 8461
+Name of output file[plotlc.fits] 
+Do you want to plot your results?[Y] 
+Enter PGPLOT device[/ps] /xw
 
+PLT> we lightcurve_test_lcurve
+PLT> q
 
 
 
 4.2 Xspec in HEASoft Software
 https://qiita.com/yamadasuzaku/items/0c5f28438f7342b63975
 
+
 4.2.1 キャリブレーションデータをフォルダに置く
 https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/data/nicer/xti/index.html
 から、**.arf, **.rmfを持ってくる。 -> gain補正を行うためのソフト
+
 
 
 4.2.2 grppha: 波長方向に光子をgrouping
@@ -183,16 +193,56 @@ Please enter PHA filename[**.pha] **.pha
 Please enter output filename[**.pha] **.pha
 
 GRPPHA[]　group min 20 #20個の光子で1binとする。
+GRPPHA[group min 20] show group　-> どういうグループでbinされたかを見せてくれる。
+GRPPHA[group min 20] exit
+
 
 
 4.2.3 Xspec
 $ xspec
 
+
 ・データ読み込み
-XSPEC>data 1:1 xis0_3_srcmath.pha (ソースファイル) 
-XSPEC>back 1 xis0_3_bgd.pha (バックグラウンドファイル) 
-XSPEC>resp 1 xis0_3_rsp.rmf (レスポンスファイル) 
-XSPEC>arf 1 xis0_3_arf.arf (arfファイル)
+XSPEC> data temp_all_20190410_grp.pha (グルーピングした後のソースファイル) 
+
+XSPEC> cpd /xw #出力をXwindowに設定
+
+XSPEC> setpl e #横軸の出力をエネルギーにする。
+
+XSPEC>
+
+#XSPEC> back 1 xis0_3_bgd.pha (バックグラウンドファイル) -> これは佐々木くんは何も言っていなかった。 
+
+XSPEC> resp nixtiref20170601v001.rmf (レスポンスファイル) 
+XSPEC> arf nixtiaveonaxis20170601v002.arf (arfファイル)
+
+XSPEC12>ig **-0.2 12.0-** #0.2 kev以下と、12.0kev以上は無視してplot
+
+XSPEC12>pl lda #縦軸log scaleでplot
+
+XSPEC12>ip #interactive plot
+PLT> we temp_all_20190410_spec #データ保存 -> .qdp, .pco fileが出来上がる。
+PLT> q #qでXSPECに戻ることができる
+
+
+
+・モデルフィッティング
+XSPEC12>mo　#Xspecの中に入っているモデルをすべて見ることができる。
+#中でも、特に使うのが、optically thin model: apecというやつ。
+
+XSPEC12>ig **-0.5 8.0-**
+
+XSPEC12>mo apec #パラメータなどを弄る
+
+XSPEC12>fit #何回かfitすると落ち着くらしいけど、よくわからん。
+
+XSPEC12>pl lda del #これにより、fitと残差をplotしてくれる。
+
+
+
+
+
+
 
 
 
