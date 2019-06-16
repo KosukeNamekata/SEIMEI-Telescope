@@ -125,7 +125,7 @@ XSEL> read eve adleokgfilt.evt #イベントファイルの読み込み #スザ�
 XSEL> set binsize 1 #ビンサイズを指定する？つまりここではbin = 1sec
 #ちなみに、この後はこれ以下の時間分解能にすることはできないので、ここでできるだけ時間分解能を高く保っておく必要がある。
 
-・時間幅
+・時間幅 # extした後？？
 XSEL> filter time cursor #で、時間はばを指定できるらしい
 PLT> r x 34e4 37e4 #range x
 PLT> q #を押すと、反映されるらしい。
