@@ -1,5 +1,11 @@
 NICERのデータ解析
 
+#聞くべきこと
+・barycorr のtaskでのインプットファイル.orbのありか。
+
+・*.txtに時間binを入れた場合の、shell commandの書き方？
+
+
 ＊Overview
 NICER観測のスケジュール
 https://heasarc.gsfc.nasa.gov/docs/nicer/schedule/nicer_sts_current.html
@@ -81,6 +87,19 @@ http://cosmic.riken.jp/suzaku/help/guide/fstep_web/fstep.html
 2. Barycentric julian date
 
 ・Xselectで抽出する前に、barycentric julian dateに直しておく必要がある。
+
+$ barycorr infile=adleokgfilt.evt outfile=adleokgfilt_bary.evt orbitfiles="$obs/auxil/ni${obsroot}.orb" ra=10:19:36.28 
+dec=+19:52:12 refframe=ICRS
+
+#RA and Dec should be the target coordinates in J2000 in degrees
+#Here $obs is the observation directory name and $obsroot is the observation number
+#Use the .orb orbit file for input, and not the filter file (.mkf). The .orb file has the highest precision. 
+#In rare cases, the standard filtered orbit solution may not be functioning. 
+#In that case the SPS_ORBIT extension can be used ni${obsroot}.orb[SPS_ORBIT]
+#HIGHLY RECOMMENDED: use refframe=ICRS, which selects a modern ephemeris. 
+#If you don't do this, there can be millisecond-errors! Deepto Chakrabarty translated 
+#new updated JPL ephemerides DE421 and DE430, which are now included in the HEASoft 6.22 distribution. 
+#Select them with the ephem=JPLEPH.430 to select DE430.
 
 ＄ barycorr infile=./${TIME}/xti/event_cl/ni${TIME}_0mpu7_cl.evt 
 outfile=./${TIME}/xti/event_cl/ni${TIME}_0mpu7_cl_bary.evt 
