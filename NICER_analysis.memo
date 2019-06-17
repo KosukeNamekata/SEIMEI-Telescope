@@ -1,9 +1,12 @@
 NICERのデータ解析
 
-#聞くべきこと
+#聞くべきこと2019/6/16
 ・barycorr のtaskでのインプットファイル.orbのありか。
+-> ダウンロードしなお
+
 
 ・*.txtに時間binを入れた場合の、shell commandの書き方？
+-> スザクのHPみてチェック
 
 
 ＊Overview
