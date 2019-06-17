@@ -9,6 +9,59 @@ NICERのデータ解析
 -> スザクのHPみてチェック
 
 
+・
+@2100410109の置いてあるフォルダで
+$ nicerl2 2100410109 nimaketime_gtiexpr="'(FPM_OVERONLY_COUNT < (1.52*COR_SAX**(-0.633)))&&(FPM_OVERONLY_COUNT < 0.9)&&(ST_VALID==1)'"
+とするだけzip fileは解凍しなくてもいいポイ。
+
+*モデル化
+XSPEC12>mo TBabs*(apec+apec+apec)
+apec = optically thinな熱放射モデル, TBabs = 星間吸収のモデル
+
+XSPEC12>mo TBabs*(apec+apec+apec)
+
+・Input parameter value, delta, min, bot, top, and max values for ...
+1:TBabs:nH>
+2:apec:kT>5
+3:apec:Abundanc>0.3 0.01 # 0.01 = thau 3 = unfrozen the parameter
+4:apec:Redshift>
+5:apec:norm>
+6:apec:kT>1
+7:apec:Abundanc>=3
+8:apec:Redshift>
+9:apec:norm>
+10:apec:kT>0.5
+11:apec:Abundanc>=3
+12:apec:Redshift>
+13:apec:norm>0.1
+
+
+・fitting結果：chi-squaredが1-1.5程度(よく言われるのが2以下だけど、あんまり十分じゃないかも)
+Test statistic : Chi-Squared =        2024.30 using 204 PHA bins.
+ Reduced chi-squared =        10.3281 for    196 degrees of freedom 
+ Null hypothesis probability =  9.938870e-301
+XSPEC> show #これで何度でも表示はできる
+
+・fitting時に、出来るだけ落ち着くまでfittingし続けてくれるようにする
+XSPEC12>query yes
+XSPEC12>fit
+
+・fitting結果を、plotしてくれる
+XSPEC12>setpl add #2成分のfittingもこれでできる。
+XSPEC12>pl
+
+・fitting結果を、logに残す
+XSPEC> log **.txt
+XSPEC> show all
+XSPEC> log none
+
+・スペクトルを保存する
+XSPEC> iplot
+PL> we hoge #で保存できる。
+
+
+
+
 ＊Overview
 NICER観測のスケジュール
 https://heasarc.gsfc.nasa.gov/docs/nicer/schedule/nicer_sts_current.html
@@ -62,8 +115,6 @@ backadleokgfilt.pha #.pha (background's spectra data)
 #基本的に、こういったキャリブレーションはNICER team内のみで共有されている。
 
 (注意2)エネルギーは0.4-8.0 keV(場合によっては、0.3-10keV)がバックグラウンドの影響をあまり受けない安全な範囲
-
-
 
 
 
