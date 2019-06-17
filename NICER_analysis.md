@@ -60,6 +60,11 @@ XSPEC> iplot
 PL> we hoge #で保存できる。
 
 
+*Emission measureに直すとき
+http://www.atomdb.org/faq.php
+em -> norm*4*np.pi*D**2
+
+
 
 
 ＊Overview
