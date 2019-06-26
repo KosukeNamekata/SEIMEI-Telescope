@@ -147,7 +147,7 @@ http://cosmic.riken.jp/suzaku/help/guide/fstep_web/fstep.html
 
 ・Xselectで抽出する前に、barycentric julian dateに直しておく必要がある。
 
-$ barycorr infile=adleokgfilt.evt outfile=adleokgfilt_bary.evt orbitfiles="$obs/auxil/ni${obsroot}.orb" ra=10:19:36.28 
+$ barycorr infile=adleo_all.evt outfile=adleokgfilt_bary.evt orbitfiles=@filename.list ra=10:19:36.28 
 dec=+19:52:12 refframe=ICRS
 
 #RA and Dec should be the target coordinates in J2000 in degrees
