@@ -62,7 +62,10 @@ PL> we hoge #で保存できる。
 
 *Emission measureに直すとき
 http://www.atomdb.org/faq.php
-em -> norm*4*np.pi*D**2
+em -> norm*4*np.pi*D**2*1e14
+
+https://heasarc.gsfc.nasa.gov/xanadu/xspec/manual/node134.html
+#10^14を最終的にかけないといけないらしい。
 
 
 
