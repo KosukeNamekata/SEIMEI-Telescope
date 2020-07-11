@@ -1,5 +1,22 @@
 # せいめい望遠鏡ADLeoスーパーフレア・プレスリリース
 
+## 京都大学/天文台リリース
+
+- 京都大学HP  
+[日本語] http://www.kyoto-u.ac.jp/ja/research/research_results/2020/200710_1.html  
+[英語] （Flaring, massively） https://www.kyoto-u.ac.jp/en/research/research_results/2020/200710_1.html
+
+- 国立天文台HP  
+[日本語] https://www.nao.ac.jp/news/science/2020/20200710-okayama.html  
+[英語] https://www.nao.ac.jp/en/news/science/2020/20200710-okayama.html
+
+- 岡山天文台HP  
+https://www.kwasan.kyoto-u.ac.jp/general/facilities/okayama/2020/07/10/superflare-adleo/
+
+- 花山天文台HP  
+[日本語] https://www.kwasan.kyoto-u.ac.jp/  
+[英語] https://www.kwasan.kyoto-u.ac.jp/index_en.html
+
 ## 日本の記事
 
 - 毎日新聞(2020/7/10)  
