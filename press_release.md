@@ -25,18 +25,23 @@ https://mainichi.jp/articles/20200709/k00/00m/040/150000c
 [英文]  
 Research team led by Kyoto University observes giant 'superflare' star explosion  
 https://mainichi.jp/english/articles/20200710/p2a/00m/0na/004000c
+[Yahoo]  
+https://news.yahoo.co.jp/articles/cb351fbfedf06f215b6824812f1c4f854c809c46
 
 - 山陽新聞(2020/7/10)  
 スーパーフレアの観測成功　浅口の望遠鏡「せいめい」：山陽新聞デジタル｜さんデジ  
 https://www.sanyonews.jp/article/1030051
+[Yahoo] https://news.yahoo.co.jp/articles/d2c64bbc4bf39d8220f902e6b22c0071b48f2657
 
 - 京都新聞(2020/7/10)  
 恒星表面の大爆発「スーパーフレア」仕組み一端解明　京大望遠鏡「せいめい」で観測 | 京都新聞  
-https://www.kyoto-np.co.jp/articles/-/303544
+https://www.kyoto-np.co.jp/articles/-/303544  
+[Yahoo] https://news.yahoo.co.jp/articles/238303507809c1323ae05c22f1f52bf49455fa1b
 
 - 時事通信(2020/7/10)  
 「スーパーフレア」詳細観測　恒星表面の大爆発現象―京都大など  
-https://www.jiji.com/jc/article?k=2020071000013&g=soc
+https://www.jiji.com/jc/article?k=2020071000013&g=soc  
+[Yahoo] https://news.yahoo.co.jp/articles/5ceb34310f3f06b29620602f1c327059e4f9247d
 
 - 日刊工業新聞(2020/7/10)  
 京大・国立天文台、「スーパーフレア」観測　磁気変動の影響評価  
@@ -49,10 +54,12 @@ https://www.yomiuri.co.jp/local/kansai/news/20200710-OYO1T50012/
 - SORAE・ネット記事(2020/7/11)  
 太陽フレア最強クラスの20倍。赤色矮星のスーパーフレアが検出される  
 https://sorae.info/astronomy/20200711-ad-leonis.html  
+[Yahoo] https://news.yahoo.co.jp/articles/0a58ae25d47a10a2c3900bc296a267651d3f467b  
 
 - アストロピクス   
 恒星表面の超巨大爆発「スーパーフレア」の観測成功！  
 https://astropics.bookbright.co.jp/ad-leonis
+
 
 ## 英文の記事
   
