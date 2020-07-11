@@ -104,8 +104,8 @@ https://www.sciencedaily.com/releases/2020/07/200709113523.htm
 天文学家在附近红矮星AD Leonis上捕捉到大量的恒星耀斑
 https://tech.sina.com.cn/roll/2020-07-10/doc-iircuyvk3016450.shtml
 
-- Quo  
-UNA LLAMARADA SOLAR SUPERMASIVA EN LA CONSTELACIÓN DE LEO(スペイン語)  
+- Quo(スペイン語)   
+UNA LLAMARADA SOLAR SUPERMASIVA EN LA CONSTELACIÓN DE LEO  
 https://www.quo.es/ciencia/q2007046250/llamaradas-solares-peligro-constelacion-leo/
 
 - Notizie scientifiche.it(イタリア語)  
