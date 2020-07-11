@@ -1,0 +1,38 @@
+# せいめい望遠鏡ADLeoスーパーフレア・プレスリリース
+
+## 日本の記事
+
+- 毎日新聞(2020/7/10)
+「スーパーフレア」の観測に成功　大規模な恒星表面の爆発現象　京大など
+https://mainichi.jp/articles/20200709/k00/00m/040/150000c
+
+- 山陽新聞(2020/7/10)
+スーパーフレアの観測成功　浅口の望遠鏡「せいめい」：山陽新聞デジタル｜さんデジ
+https://www.sanyonews.jp/article/1030051
+
+- 京都新聞(2020/7/10)
+恒星表面の大爆発「スーパーフレア」仕組み一端解明　京大望遠鏡「せいめい」で観測 | 京都新聞
+https://www.kyoto-np.co.jp/articles/-/303544
+
+- 時事通信(2020/7/10)
+「スーパーフレア」詳細観測　恒星表面の大爆発現象―京都大など
+https://www.jiji.com/jc/article?k=2020071000013&g=soc
+
+- 日刊工業新聞(2020/7/10)
+京大・国立天文台、「スーパーフレア」観測　磁気変動の影響評価
+https://www.nikkan.co.jp/articles/view/00564073?twinews=20200710
+
+- 読売新聞(2020/7/10)
+スーパーフレア観測成功、京大など…しし座の恒星、太陽フレアの２０倍
+https://www.yomiuri.co.jp/local/kansai/news/20200710-OYO1T50012/
+
+## 海外の記事
+
+- C net news(2020/7/10)
+Astronomers catch massive stellar flares on nearby small star AD Leonis
+https://www.cnet.com/google-amp/news/astronomers-catch-massive-stellar-flares-on-nearby-small-star-ad-leonis/
+
+- PHYS ORG(2020/7/10)
+A new telescope to study solar flares
+https://phys.org/news/2020-07-telescope-solar-flares.amp
+
