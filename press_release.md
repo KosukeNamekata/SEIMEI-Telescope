@@ -45,7 +45,11 @@ https://www.yomiuri.co.jp/local/kansai/news/20200710-OYO1T50012/
 
 - SORAE・ネット記事(2020/7/11)
 太陽フレア最強クラスの20倍。赤色矮星のスーパーフレアが検出される
-https://sorae.info/astronomy/20200711-ad-leonis.html
+https://sorae.info/astronomy/20200711-ad-leonis.html  
+
+- アストロピクス  
+恒星表面の超巨大爆発「スーパーフレア」の観測成功！  
+https://astropics.bookbright.co.jp/ad-leonis
 
 ## 海外の記事
   
@@ -65,3 +69,6 @@ https://www.forbes.com/sites/jamiecartereurope/2020/07/10/huge-lions-roar-superf
 Japanese Telescope Records Solar Superflare 16 Light-Years Away From Us
 https://interestingengineering.com/japanese-telescope-records-solar-superflare-16-light-years-away-from-us
 
+- Alpha Galileo 
+The Lion’s Roar: New Telescope Spots Superflare in Leo  
+https://www.alphagalileo.org/en-gb/Item-Display/ItemId/194974?returnurl=https://www.alphagalileo.org/en-gb/Item-Display/ItemId/194974
