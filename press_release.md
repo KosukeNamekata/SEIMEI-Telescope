@@ -21,7 +21,10 @@ https://www.kwasan.kyoto-u.ac.jp/general/facilities/okayama/2020/07/10/superflar
   
 - 毎日新聞(2020/7/10)  
 「スーパーフレア」の観測に成功　大規模な恒星表面の爆発現象　京大など  
-https://mainichi.jp/articles/20200709/k00/00m/040/150000c
+https://mainichi.jp/articles/20200709/k00/00m/040/150000c  
+[英文]  
+Research team led by Kyoto University observes giant 'superflare' star explosion  
+https://mainichi.jp/english/articles/20200710/p2a/00m/0na/004000c
 
 - 山陽新聞(2020/7/10)  
 スーパーフレアの観測成功　浅口の望遠鏡「せいめい」：山陽新聞デジタル｜さんデジ  
@@ -51,7 +54,7 @@ https://sorae.info/astronomy/20200711-ad-leonis.html
 恒星表面の超巨大爆発「スーパーフレア」の観測成功！  
 https://astropics.bookbright.co.jp/ad-leonis
 
-## 海外の記事
+## 英文の記事
   
 - C net news(2020/7/10)  
 Astronomers catch massive stellar flares on nearby small star AD Leonis  
@@ -72,3 +75,40 @@ https://interestingengineering.com/japanese-telescope-records-solar-superflare-1
 - Alpha Galileo  
 The Lion’s Roar: New Telescope Spots Superflare in Leo  
 https://www.alphagalileo.org/en-gb/Item-Display/ItemId/194974?returnurl=https://www.alphagalileo.org/en-gb/Item-Display/ItemId/194974
+
+- SciTechDaily  
+New Japanese Telescope Detects Immense “Superflare” on Nearby Star  
+https://scitechdaily.com/new-japanese-telescope-detects-immense-superflare-on-nearby-star/  
+
+- FirstPost
+KYOTO UNIVERSITY SCIENTISTS OBSERVE HUGE ‘SUPERFLARE’ FROM RED DWARF STAR 16 LIGHT YEARS AWAY  
+https://www.firstpost.com/tech/science/kyoto-university-scientists-observe-huge-superflare-from-red-dwarf-star-16-light-years-away-8586041.html
+
+- Republic World  
+Red Dwarf Star Spotted With Blazing Flares Using 3.8-metre Seimei Telescope  
+https://www.republicworld.com/technology-news/science/red-dwarf-star-spotted-with-blazing-flares.html  
+
+- Sci News  
+Astronomers Observe Superflare on Nearby Red Dwarf AD Leonis  
+http://www.sci-news.com/astronomy/superflare-red-dwarf-ad-leonis-08622.html
+
+- Science dayily  
+Enormous 'superflare' detected on nearby star  
+https://www.sciencedaily.com/releases/2020/07/200709113523.htm
+
+- 
+
+## その他、海外の記事  
+
+- 新浪网(中国語)  
+天文学家在附近红矮星AD Leonis上捕捉到大量的恒星耀斑
+https://tech.sina.com.cn/roll/2020-07-10/doc-iircuyvk3016450.shtml
+
+- Quo  
+UNA LLAMARADA SOLAR SUPERMASIVA EN LA CONSTELACIÓN DE LEO(スペイン語)  
+https://www.quo.es/ciencia/q2007046250/llamaradas-solares-peligro-constelacion-leo/
+
+- Notizie scientifiche.it(イタリア語)  
+Enorme superflare individuato sulla stella AD Leonis, lontana 16 anni luce  
+https://notiziescientifiche.it/enorme-superflare-individuato-sulla-stella-ad-leonis-lontana-16-anni-luce/
+
