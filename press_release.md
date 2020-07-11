@@ -47,7 +47,7 @@ https://www.nikkan.co.jp/articles/view/00564073?twinews=20200710
 https://www.yomiuri.co.jp/local/kansai/news/20200710-OYO1T50012/
 
 - SORAE・ネット記事(2020/7/11)  
-太陽フレア最強クラスの20倍。赤色矮星のスーパーフレアが検出される
+太陽フレア最強クラスの20倍。赤色矮星のスーパーフレアが検出される  
 https://sorae.info/astronomy/20200711-ad-leonis.html  
 
 - アストロピクス   
@@ -69,7 +69,7 @@ Huge ‘Lion’s Roar’ Superflare Seen From Japan Should Be A Wake-Up Call For
 https://www.forbes.com/sites/jamiecartereurope/2020/07/10/huge-lions-roar-superflare-seen-from-japan-should-be-a-wake-up-call-for-earthlings/#7fbbe52e5305
 
 - Interesting Engineering  
-Japanese Telescope Records Solar Superflare 16 Light-Years Away From Us
+Japanese Telescope Records Solar Superflare 16 Light-Years Away From Us  
 https://interestingengineering.com/japanese-telescope-records-solar-superflare-16-light-years-away-from-us
 
 - Alpha Galileo  
@@ -101,7 +101,7 @@ https://www.sciencedaily.com/releases/2020/07/200709113523.htm
 ## その他、海外の記事  
 
 - 新浪网(中国語)  
-天文学家在附近红矮星AD Leonis上捕捉到大量的恒星耀斑
+天文学家在附近红矮星AD Leonis上捕捉到大量的恒星耀斑  
 https://tech.sina.com.cn/roll/2020-07-10/doc-iircuyvk3016450.shtml
 
 - Quo(スペイン語)   
