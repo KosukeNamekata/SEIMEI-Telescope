@@ -14,8 +14,8 @@
 [https://www.kwasan.kyoto-u.ac.jp/general/facilities/okayama/2020/07/10/superflare-adleo/](https://www.kwasan.kyoto-u.ac.jp/general/facilities/okayama/2020/07/10/superflare-adleo/)
 
 - 花山天文台HP  
-[日本語] https://www.kwasan.kyoto-u.ac.jp/  
-[英語] https://www.kwasan.kyoto-u.ac.jp/index_en.html
+[日本語] [https://www.kwasan.kyoto-u.ac.jp/](https://www.kwasan.kyoto-u.ac.jp/)  
+[英語] [https://www.kwasan.kyoto-u.ac.jp/index_en.html](https://www.kwasan.kyoto-u.ac.jp/index_en.html)
 
 ## 日本の記事
 
