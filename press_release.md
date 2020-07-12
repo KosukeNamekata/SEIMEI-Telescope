@@ -18,7 +18,11 @@ https://www.kwasan.kyoto-u.ac.jp/general/facilities/okayama/2020/07/10/superflar
 [英語] https://www.kwasan.kyoto-u.ac.jp/index_en.html
 
 ## 日本の記事
-  
+
+- テレビ朝日  
+京大研究チーム「スーパーフレア」観測に成功(ANNニュースでも流れた模様)  
+https://news.tv-asahi.co.jp/news_society/articles/000188119.html  
+
 - 毎日新聞(2020/7/10)  
 「スーパーフレア」の観測に成功　大規模な恒星表面の爆発現象　京大など  
 https://mainichi.jp/articles/20200709/k00/00m/040/150000c  
@@ -27,7 +31,6 @@ https://mainichi.jp/articles/20200709/k00/00m/040/150000c
 [英文]  
 Research team led by Kyoto University observes giant 'superflare' star explosion  
 https://mainichi.jp/english/articles/20200710/p2a/00m/0na/004000c  
-
 
 - 山陽新聞(2020/7/10)  
 スーパーフレアの観測成功　浅口の望遠鏡「せいめい」：山陽新聞デジタル｜さんデジ  
