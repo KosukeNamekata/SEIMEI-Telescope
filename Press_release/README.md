@@ -35,9 +35,9 @@ Research team led by Kyoto University observes giant 'superflare' star explosion
 - 山陽新聞(2020/7/10)  
 スーパーフレアの観測成功　浅口の望遠鏡「せいめい」：山陽新聞デジタル｜さんデジ  
 [https://www.sanyonews.jp/article/1030051](https://www.sanyonews.jp/article/1030051)  
-( [Yahoo]https://news.yahoo.co.jp/articles/d2c64bbc4bf39d8220f902e6b22c0071b48f2657)
-[Yahoo's pdf](https://drive.google.com/file/d/1Owkm0jGck0wmHzxyywAmpUG4o__BXQq4/view?usp=sharing)
-[新聞記事](https://drive.google.com/file/d/1gMZVdjfI59M4YeRF-H3DKocSGXa9Of0d/view?usp=sharing))
+( <[Yahoo](https://news.yahoo.co.jp/articles/d2c64bbc4bf39d8220f902e6b22c0071b48f2657)>
+<[Yahoo's pdf](https://drive.google.com/file/d/1Owkm0jGck0wmHzxyywAmpUG4o__BXQq4/view?usp=sharing)>
+<[新聞記事](https://drive.google.com/file/d/1gMZVdjfI59M4YeRF-H3DKocSGXa9Of0d/view?usp=sharing)>)
 
 - 京都新聞(2020/7/10)  
 恒星表面の大爆発「スーパーフレア」仕組み一端解明　京大望遠鏡「せいめい」で観測 | 京都新聞  
