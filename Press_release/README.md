@@ -3,7 +3,7 @@
 ## 京都大学/天文台リリース
   
 - 京都大学HP  
-[日本語] url: "http://www.kyoto-u.ac.jp/ja/research/research_results/2020/200710_1.html"  
+[日本語] url:"http://www.kyoto-u.ac.jp/ja/research/research_results/2020/200710_1.html"  
 [英語] （Flaring, massively） https://www.kyoto-u.ac.jp/en/research/research_results/2020/200710_1.html
 
 - 国立天文台HP  
