@@ -17,6 +17,7 @@
 [日本語] [https://www.kwasan.kyoto-u.ac.jp/](https://www.kwasan.kyoto-u.ac.jp/)  
 [英語] [https://www.kwasan.kyoto-u.ac.jp/index_en.html](https://www.kwasan.kyoto-u.ac.jp/index_en.html)
 
+
 ## 日本の記事
 
 #### 新聞社
@@ -99,6 +100,14 @@
 恒星表面の超巨大爆発「スーパーフレア」の観測成功！  
 [https://astropics.bookbright.co.jp/ad-leonis](https://astropics.bookbright.co.jp/ad-leonis)
 
+- ニュースイッチ  
+[https://newswitch.jp/p/22967](https://newswitch.jp/p/22967)
+
+- テック・アイ技術情報研究所  
+[https://tiisys.com/blog/2020/07/10/post-73014/](https://tiisys.com/blog/2020/07/10/post-73014/)
+
+- オプトロニクスオンライン  
+[http://www.optronics-media.com/news/20200710/65966/](http://www.optronics-media.com/news/20200710/65966/)
 
 ## 英文の記事
   
