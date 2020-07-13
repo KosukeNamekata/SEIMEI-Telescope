@@ -77,7 +77,7 @@
 京大研究チーム「スーパーフレア」観測に成功  
 [https://www.kfb.co.jp/news/ann/index.php?category=3&id=000188119](https://www.kfb.co.jp/news/ann/index.php?category=3&id=000188119)
 
-  - 広島ホームテレビ(テレビ朝日系列)
+  - 広島ホームテレビ(テレビ朝日系列)  
 京大研究チーム「スーパーフレア」観測に成功  
 [https://www.home-tv.co.jp/news/content/?news_id=000188119](https://www.home-tv.co.jp/news/content/?news_id=000188119)
 
