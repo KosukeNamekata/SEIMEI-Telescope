@@ -19,9 +19,7 @@
 
 ## 日本の記事
 
-- テレビ朝日  
-京大研究チーム「スーパーフレア」観測に成功(ANNニュースでも流れた模様)  
-[https://news.tv-asahi.co.jp/news_society/articles/000188119.html](https://news.tv-asahi.co.jp/news_society/articles/000188119.html)  
+#### 新聞
 
 - 毎日新聞(2020/7/10)  
 「スーパーフレア」の観測に成功　大規模な恒星表面の爆発現象　京大など  
@@ -43,7 +41,8 @@
 [https://www.kyoto-np.co.jp/articles/-/303544](https://www.kyoto-np.co.jp/articles/-/303544)  
 (<[Yahoo](https://news.yahoo.co.jp/articles/238303507809c1323ae05c22f1f52bf49455fa1b)>
 <[Yahoo's pdf](https://drive.google.com/file/d/1rL5Hs2IUjk6SvSxwlD-V9UJrQIW2YmaW/view?usp=sharing)>
-<[新聞記事](https://drive.google.com/file/d/1FYdnaJhQxXZ_lZNKhneBTgHdTnV44Q-0/view?usp=sharing)>)
+<[新聞記事1(スキャン)](https://drive.google.com/file/d/18zBtwpKwgaJjMM9gtw8BoPbetrUcIg6E/view?usp=sharing)>
+<[新聞記事2(写真)](https://drive.google.com/file/d/1FYdnaJhQxXZ_lZNKhneBTgHdTnV44Q-0/view?usp=sharing)>)
 
 - 時事通信(2020/7/10)  
 「スーパーフレア」詳細観測　恒星表面の大爆発現象―京都大など  
@@ -53,11 +52,23 @@
 
 - 日刊工業新聞(2020/7/10)  
 京大・国立天文台、「スーパーフレア」観測　磁気変動の影響評価  
-[https://www.nikkan.co.jp/articles/view/00564073?twinews=20200710](https://www.nikkan.co.jp/articles/view/00564073?twinews=20200710)
+[https://www.nikkan.co.jp/articles/view/00564073?twinews=20200710](https://www.nikkan.co.jp/articles/view/00564073?twinews=20200710)  
+(<[pdf](https://drive.google.com/file/d/1yN9NEfcviqZlBaFQts5z_1KJxMsKVC1R/view?usp=sharing)>)
 
 - 読売新聞(2020/7/10)  
 スーパーフレア観測成功、京大など…しし座の恒星、太陽フレアの２０倍  
 [https://www.yomiuri.co.jp/local/kansai/news/20200710-OYO1T50012/](https://www.yomiuri.co.jp/local/kansai/news/20200710-OYO1T50012/)
+
+- しんぶん赤旗  
+(<[新聞記事](https://drive.google.com/file/d/1crhAQkdsbtVpr3-ptCkhXCOCtLgM1p16/view?usp=sharing)>)
+
+#### テレビ放送
+
+- テレビ朝日  
+京大研究チーム「スーパーフレア」観測に成功(ANNニュースでも流れた模様)  
+[https://news.tv-asahi.co.jp/news_society/articles/000188119.html](https://news.tv-asahi.co.jp/news_society/articles/000188119.html)  
+
+#### ネット記事
 
 - SORAE・ネット記事(2020/7/11)  
 太陽フレア最強クラスの20倍。赤色矮星のスーパーフレアが検出される  
