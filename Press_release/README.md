@@ -88,7 +88,7 @@
 - ゆめネット放送(動画あり)  
 [http://home.kcv.ne.jp/yumenews/news.html?p=26543](http://home.kcv.ne.jp/yumenews/news.html?p=26543)
 
-#### ネット記事
+#### 天文系ネット記事
 
 - SORAE・ネット記事(2020/7/11)  
 太陽フレア最強クラスの20倍。赤色矮星のスーパーフレアが検出される  
@@ -99,6 +99,8 @@
 - アストロピクス   
 恒星表面の超巨大爆発「スーパーフレア」の観測成功！  
 [https://astropics.bookbright.co.jp/ad-leonis](https://astropics.bookbright.co.jp/ad-leonis)
+
+#### ネット記事(転載)
 
 - ニュースイッチ  
 [https://newswitch.jp/p/22967](https://newswitch.jp/p/22967)
