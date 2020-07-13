@@ -167,3 +167,27 @@ UNA LLAMARADA SOLAR SUPERMASIVA EN LA CONSTELACIÓN DE LEO
 Enorme superflare individuato sulla stella AD Leonis, lontana 16 anni luce  
 [https://notiziescientifiche.it/enorme-superflare-individuato-sulla-stella-ad-leonis-lontana-16-anni-luce/](https://notiziescientifiche.it/enorme-superflare-individuato-sulla-stella-ad-leonis-lontana-16-anni-luce/)
 
+- Mashable India(インド)
+Astronomers Detect Enormous 'Superflare' On A Nearby Red Dwarf Star  
+[https://in.mashable.com/science/15516/astronomers-detect-enormous-superflare-on-a-nearby-red-dwarf-star](https://in.mashable.com/science/15516/astronomers-detect-enormous-superflare-on-a-nearby-red-dwarf-star)
+
+- Sputnik Brasil(ブラジル)  
+Uma equipe de astrônomos captou grandes explosões em uma estrela anã vermelha chamada AD Leonis, sendo uma delas 20 vezes maior que as explosões solares.  
+[https://br.sputniknews.com/ciencia_tecnologia/2020071215824070-grandes-explosoes-solares-sao-captadas-em-estrela-ana-vermelha-foto/](https://br.sputniknews.com/ciencia_tecnologia/2020071215824070-grandes-explosoes-solares-sao-captadas-em-estrela-ana-vermelha-foto/)
+
+- Noticias de la Ciencia(スペイン語)  
+Gigantescas llamaradas estelares  
+[https://noticiasdelaciencia.com/art/38785/gigantescas-llamaradas-estelares](https://noticiasdelaciencia.com/art/38785/gigantescas-llamaradas-estelares)
+
+- НОВОСТИ КОСМОСА(ロシア語)  
+Новый телескоп для изучения звездных вспышек  
+[https://www.astronews.ru/cgi-bin/mng.cgi?page=news&news=20200712111429](https://www.astronews.ru/cgi-bin/mng.cgi?page=news&news=20200712111429)  
+#Косукэ Намеката = Kosuke Namekata  
+#AD Льва = AD Leo
+
+- ISNA(ペルシア語)
+مشاهده ابرشراره خورشیدی در یک ستاره کوتوله سرخ
+[HP](http://www.isna.ir/news/99042115281/%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87-%D8%A7%D8%A8%D8%B1%D8%B4%D8%B1%D8%A7%D8%B1%D9%87-%D8%AE%D9%88%D8%B1%D8%B4%DB%8C%D8%AF%DB%8C-%D8%AF%D8%B1-%DB%8C%DA%A9-%D8%B3%D8%AA%D8%A7%D8%B1%D9%87-%DA%A9%D9%88%D8%AA%D9%88%D9%84%D9%87-%D8%B3%D8%B1%D8%AE)
+
+- 
+Énorme éblouissement superficiel détecté sur l’étoile AD Leonis, à 16 années-lumière  
