@@ -185,9 +185,11 @@ Gigantescas llamaradas estelares
 #Косукэ Намеката = Kosuke Namekata  
 #AD Льва = AD Leo
 
-- ISNA(ペルシア語)
+- ISNA(ペルシア語)  
 مشاهده ابرشراره خورشیدی در یک ستاره کوتوله سرخ
-[HP](http://www.isna.ir/news/99042115281/%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87-%D8%A7%D8%A8%D8%B1%D8%B4%D8%B1%D8%A7%D8%B1%D9%87-%D8%AE%D9%88%D8%B1%D8%B4%DB%8C%D8%AF%DB%8C-%D8%AF%D8%B1-%DB%8C%DA%A9-%D8%B3%D8%AA%D8%A7%D8%B1%D9%87-%DA%A9%D9%88%D8%AA%D9%88%D9%84%D9%87-%D8%B3%D8%B1%D8%AE)
 
-- 
+[Home Page](http://www.isna.ir/news/99042115281/%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87-%D8%A7%D8%A8%D8%B1%D8%B4%D8%B1%D8%A7%D8%B1%D9%87-%D8%AE%D9%88%D8%B1%D8%B4%DB%8C%D8%AF%DB%8C-%D8%AF%D8%B1-%DB%8C%DA%A9-%D8%B3%D8%AA%D8%A7%D8%B1%D9%87-%DA%A9%D9%88%D8%AA%D9%88%D9%84%D9%87-%D8%B3%D8%B1%D8%AE)
+
+- Mlactu  
 Énorme éblouissement superficiel détecté sur l’étoile AD Leonis, à 16 années-lumière  
+[https://www.mlactu.fr/enorme-eblouissement-superficiel-detecte-sur-letoile-ad-leonis-a-16-annees-lumiere/](https://www.mlactu.fr/enorme-eblouissement-superficiel-detecte-sur-letoile-ad-leonis-a-16-annees-lumiere/)
