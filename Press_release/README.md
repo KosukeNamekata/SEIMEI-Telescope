@@ -28,7 +28,8 @@
 [英文]  Research team led by Kyoto University observes giant 'superflare' star explosion  
 [https://mainichi.jp/english/articles/20200710/p2a/00m/0na/004000c](https://mainichi.jp/english/articles/20200710/p2a/00m/0na/004000c)  
 (<[Yahoo](https://news.yahoo.co.jp/articles/cb351fbfedf06f215b6824812f1c4f854c809c46)>
-<[Yahoo's pdf](https://drive.google.com/file/d/1UFrbMCXrKb7qL9QjqeZRP3rwpuVb7317/view?usp=sharing)>)  
+<[Yahoo's pdf](https://drive.google.com/file/d/1UFrbMCXrKb7qL9QjqeZRP3rwpuVb7317/view?usp=sharing)>
+<[新聞記事(写真)](https://drive.google.com/file/d/1B6bJ4pV0Pr0i1kP_BpPjf_OSs8twWk4z/view?usp=sharing)>)  
 
 - 山陽新聞(2020/7/10)  
 スーパーフレアの観測成功　浅口の望遠鏡「せいめい」：山陽新聞デジタル｜さんデジ  
