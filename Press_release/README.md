@@ -19,7 +19,7 @@
 
 ## 日本の記事
 
-#### 新聞
+#### 新聞社
 
 - 毎日新聞(2020/7/10)  
 「スーパーフレア」の観測に成功　大規模な恒星表面の爆発現象　京大など  
@@ -62,11 +62,30 @@
 - しんぶん赤旗  
 (<[新聞記事](https://drive.google.com/file/d/1crhAQkdsbtVpr3-ptCkhXCOCtLgM1p16/view?usp=sharing)>)
 
-#### テレビ放送
+#### テレビ放送(ネット記事を含む)
 
 - テレビ朝日  
 京大研究チーム「スーパーフレア」観測に成功(ANNニュースでも流れた模様)  
 [https://news.tv-asahi.co.jp/news_society/articles/000188119.html](https://news.tv-asahi.co.jp/news_society/articles/000188119.html)  
+
+  - 静岡朝日テレビ(テレビ朝日系列)  
+京大研究チーム「スーパーフレア」観測に成功  
+[https://www.satv.co.jp/0100news/ann.php?CategoryId=99&date=20200710&id=80](https://www.satv.co.jp/0100news/ann.php?CategoryId=99&date=20200710&id=80)
+
+  - KFB福島放送(テレビ朝日系列)  
+京大研究チーム「スーパーフレア」観測に成功  
+[https://www.kfb.co.jp/news/ann/index.php?category=3&id=000188119](https://www.kfb.co.jp/news/ann/index.php?category=3&id=000188119)
+
+  - 広島ホームテレビ(テレビ朝日系列)
+京大研究チーム「スーパーフレア」観測に成功  
+[https://www.home-tv.co.jp/news/content/?news_id=000188119](https://www.home-tv.co.jp/news/content/?news_id=000188119)
+
+  - メ〜テレ(名古屋テレビ・テレビ朝日系列)  
+京大研究チーム「スーパーフレア」観測に成功  
+[https://www.nagoyatv.com/news/syakai.html?id=000188119](https://www.nagoyatv.com/news/syakai.html?id=000188119)
+
+- ゆめネット放送(動画あり)  
+[http://home.kcv.ne.jp/yumenews/news.html?p=26543](http://home.kcv.ne.jp/yumenews/news.html?p=26543)
 
 #### ネット記事
 
