@@ -51,7 +51,7 @@
 京大・国立天文台、「スーパーフレア」観測　磁気変動の影響評価  
 [https://www.nikkan.co.jp/articles/view/00564073?twinews=20200710](https://www.nikkan.co.jp/articles/view/00564073?twinews=20200710)  
 (<[pdf](https://drive.google.com/file/d/1yN9NEfcviqZlBaFQts5z_1KJxMsKVC1R/view?usp=sharing)>
-<[新聞記事(一面目次)](https://drive.google.com/file/d/1GGhPihRW7LwMaQpcmvOSf8vOroOp-H0q/view?usp=sharing)>
+<[新聞記事(一面目次)](https://drive.google.com/file/d/1RhFJ5_3kNQB4tLtU6Zn6pk4MSsrnQzMz/view?usp=sharing)>
 <[新聞記事](https://drive.google.com/file/d/1mm2kawSge4rF81hlyAdN4sl515yDZ0pI/view?usp=sharing)>)
 
 - 読売新聞(2020/7/10)  
