@@ -182,7 +182,7 @@ UNA LLAMARADA SOLAR SUPERMASIVA EN LA CONSTELACIÓN DE LEO
 Enorme superflare individuato sulla stella AD Leonis, lontana 16 anni luce  
 [https://notiziescientifiche.it/enorme-superflare-individuato-sulla-stella-ad-leonis-lontana-16-anni-luce/](https://notiziescientifiche.it/enorme-superflare-individuato-sulla-stella-ad-leonis-lontana-16-anni-luce/)
 
-- Mashable India(インド)
+- Mashable India(インド; 英語)
 Astronomers Detect Enormous 'Superflare' On A Nearby Red Dwarf Star  
 [https://in.mashable.com/science/15516/astronomers-detect-enormous-superflare-on-a-nearby-red-dwarf-star](https://in.mashable.com/science/15516/astronomers-detect-enormous-superflare-on-a-nearby-red-dwarf-star)
 
@@ -190,11 +190,11 @@ Astronomers Detect Enormous 'Superflare' On A Nearby Red Dwarf Star
 सूर्य से भी ज्यादा तेज धधकता नजर आया लाल तारा, वैज्ञानिकों ने कहा superflares  
 [https://www.patrika.com/science-tech-news/scientists-notice-superflares-from-red-dwarf-star-it-is-huge-than-sun-6266036/](https://www.patrika.com/science-tech-news/scientists-notice-superflares-from-red-dwarf-star-it-is-huge-than-sun-6266036/)
 
-- Hindi News18  
+- Hindi News18(ヒンドゥー語)    
 एक छोटे तारे से निकलीं superflares, जानिए खगोलविद क्यों कह रहे हैं इन्हें खास  
 [https://hindi.news18.com/news/knowledge/scientists-observe-big-superflare-from-red-dwarf-star-viks-3175037.html](https://hindi.news18.com/news/knowledge/scientists-observe-big-superflare-from-red-dwarf-star-viks-3175037.html)
 
-- Sputnik Brasil(ブラジル)  
+- Sputnik Brasil(ブラジル; ポルトガル語)  
 Uma equipe de astrônomos captou grandes explosões em uma estrela anã vermelha chamada AD Leonis, sendo uma delas 20 vezes maior que as explosões solares.  
 [https://br.sputniknews.com/ciencia_tecnologia/2020071215824070-grandes-explosoes-solares-sao-captadas-em-estrela-ana-vermelha-foto/](https://br.sputniknews.com/ciencia_tecnologia/2020071215824070-grandes-explosoes-solares-sao-captadas-em-estrela-ana-vermelha-foto/)
 
@@ -213,6 +213,6 @@ Gigantescas llamaradas estelares
   [http://www.isna.ir/news/99042115281/%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87-%D8%A7%D8%A8%D8%B1%D8%B4%D8%B1%D8%A7%D8%B1%D9%87-%D8%AE%D9%88%D8%B1%D8%B4%DB%8C%D8%AF%DB%8C-%D8%AF%D8%B1-%DB%8C%DA%A9-%D8%B3%D8%AA%D8%A7%D8%B1%D9%87-%DA%A9%D9%88%D8%AA%D9%88%D9%84%D9%87-%D8%B3%D8%B1%D8%AE](http://www.isna.ir/news/99042115281/%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D9%87-%D8%A7%D8%A8%D8%B1%D8%B4%D8%B1%D8%A7%D8%B1%D9%87-%D8%AE%D9%88%D8%B1%D8%B4%DB%8C%D8%AF%DB%8C-%D8%AF%D8%B1-%DB%8C%DA%A9-%D8%B3%D8%AA%D8%A7%D8%B1%D9%87-%DA%A9%D9%88%D8%AA%D9%88%D9%84%D9%87-%D8%B3%D8%B1%D8%AE)  
 کوسوکه نامه کاتا = Kosuke Namekata
 
-- Mlactu  
+- Mlactu(フランス語)  
 Énorme éblouissement superficiel détecté sur l’étoile AD Leonis, à 16 années-lumière  
 [https://www.mlactu.fr/enorme-eblouissement-superficiel-detecte-sur-letoile-ad-leonis-a-16-annees-lumiere/](https://www.mlactu.fr/enorme-eblouissement-superficiel-detecte-sur-letoile-ad-leonis-a-16-annees-lumiere/)
