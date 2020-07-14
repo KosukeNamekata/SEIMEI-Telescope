@@ -166,7 +166,8 @@ http://www.sci-news.com/astronomy/superflare-red-dwarf-ad-leonis-08622.html
 Enormous 'superflare' detected on nearby star  
 [https://www.sciencedaily.com/releases/2020/07/200709113523.htm](https://www.sciencedaily.com/releases/2020/07/200709113523.htm)
 
-- 
+- Independent  
+[https://www.independent.co.uk/life-style/gadgets-and-tech/news/superflare-sun-star-sky-leo-technology-earth-a9616646.html](https://www.independent.co.uk/life-style/gadgets-and-tech/news/superflare-sun-star-sky-leo-technology-earth-a9616646.html)
 
 ## その他、海外の記事  
 
@@ -221,6 +222,10 @@ Gigantescas llamaradas estelares
 العملاق ‘superflare’ رصدت في مكان قريب نجوم  
 [http://www.elmawkefalarabi.com/politics/news-2020071329682](http://www.elmawkefalarabi.com/politics/news-2020071329682)
 
+- arabic.sputniknews.com(アラビア語)
+رصد علماء الفلك في اليابان، توهجا فائقا في النجم "AD Leonis"، لم يرصد مثله من قبل.  
+[https://arabic.sputniknews.com/mosaic/202007131045992581-%D9%85%D8%AE%D8%A7%D9%88%D9%81-%D9%85%D9%86-%D8%AE%D8%B7%D9%88%D8%B1%D8%A9-%D9%83%D8%A8%D9%8A%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A3%D8%B1%D8%B6-%D8%B1%D8%B5%D8%AF-%D8%B8%D8%A7%D9%87%D8%B1%D8%A9-%D9%81%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9-%D8%BA%D9%8A%D8%B1-%D9%85%D8%B3%D8%A8%D9%88%D9%82%D8%A9/](https://arabic.sputniknews.com/mosaic/202007131045992581-%D9%85%D8%AE%D8%A7%D9%88%D9%81-%D9%85%D9%86-%D8%AE%D8%B7%D9%88%D8%B1%D8%A9-%D9%83%D8%A8%D9%8A%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A3%D8%B1%D8%B6-%D8%B1%D8%B5%D8%AF-%D8%B8%D8%A7%D9%87%D8%B1%D8%A9-%D9%81%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9-%D8%BA%D9%8A%D8%B1-%D9%85%D8%B3%D8%A8%D9%88%D9%82%D8%A9/)
 
-
-
+- tempo.co(インドネシア語; 動画あり)
+Teleskop Jepang Deteksi Superflare Penuh Misteri  
+[https://video.tempo.co/read/20744/teleskop-jepang-deteksi-superflare-penuh-misteri](https://video.tempo.co/read/20744/teleskop-jepang-deteksi-superflare-penuh-misteri)
