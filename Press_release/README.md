@@ -216,3 +216,11 @@ Gigantescas llamaradas estelares
 - Mlactu(フランス語)  
 Énorme éblouissement superficiel détecté sur l’étoile AD Leonis, à 16 années-lumière  
 [https://www.mlactu.fr/enorme-eblouissement-superficiel-detecte-sur-letoile-ad-leonis-a-16-annees-lumiere/](https://www.mlactu.fr/enorme-eblouissement-superficiel-detecte-sur-letoile-ad-leonis-a-16-annees-lumiere/)
+
+- elmawkefalarabi.com(アラビア語)  
+العملاق ‘superflare’ رصدت في مكان قريب نجوم  
+[http://www.elmawkefalarabi.com/politics/news-2020071329682](http://www.elmawkefalarabi.com/politics/news-2020071329682)
+
+
+
+
