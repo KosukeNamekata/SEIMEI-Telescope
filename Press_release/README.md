@@ -118,7 +118,14 @@
 [http://www.optronics-media.com/news/20200710/65966/](http://www.optronics-media.com/news/20200710/65966/)
 
 ## 英文の記事
-  
+
+#### 天文系ネット記事
+
+- Eureka Alert! (AAAS)    
+[https://www.eurekalert.org/pub_releases/2020-07/ku-fm070920.php](https://www.eurekalert.org/pub_releases/2020-07/ku-fm070920.php)
+
+#### 一般記事
+
 - C net news(2020/7/10)  
 Astronomers catch massive stellar flares on nearby small star AD Leonis  
 [https://www.cnet.com/google-amp/news/astronomers-catch-massive-stellar-flares-on-nearby-small-star-ad-leonis/](https://www.cnet.com/google-amp/news/astronomers-catch-massive-stellar-flares-on-nearby-small-star-ad-leonis/)
@@ -178,6 +185,14 @@ Enorme superflare individuato sulla stella AD Leonis, lontana 16 anni luce
 - Mashable India(インド)
 Astronomers Detect Enormous 'Superflare' On A Nearby Red Dwarf Star  
 [https://in.mashable.com/science/15516/astronomers-detect-enormous-superflare-on-a-nearby-red-dwarf-star](https://in.mashable.com/science/15516/astronomers-detect-enormous-superflare-on-a-nearby-red-dwarf-star)
+
+- Patrika(ヒンドゥー語)  
+सूर्य से भी ज्यादा तेज धधकता नजर आया लाल तारा, वैज्ञानिकों ने कहा superflares  
+[https://www.patrika.com/science-tech-news/scientists-notice-superflares-from-red-dwarf-star-it-is-huge-than-sun-6266036/](https://www.patrika.com/science-tech-news/scientists-notice-superflares-from-red-dwarf-star-it-is-huge-than-sun-6266036/)
+
+- Hindi News18  
+एक छोटे तारे से निकलीं superflares, जानिए खगोलविद क्यों कह रहे हैं इन्हें खास  
+[https://hindi.news18.com/news/knowledge/scientists-observe-big-superflare-from-red-dwarf-star-viks-3175037.html](https://hindi.news18.com/news/knowledge/scientists-observe-big-superflare-from-red-dwarf-star-viks-3175037.html)
 
 - Sputnik Brasil(ブラジル)  
 Uma equipe de astrônomos captou grandes explosões em uma estrela anã vermelha chamada AD Leonis, sendo uma delas 20 vezes maior que as explosões solares.  
