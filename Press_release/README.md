@@ -230,7 +230,7 @@ Gigantescas llamaradas estelares
 Teleskop Jepang Deteksi Superflare Penuh Misteri  
 [https://video.tempo.co/read/20744/teleskop-jepang-deteksi-superflare-penuh-misteri](https://video.tempo.co/read/20744/teleskop-jepang-deteksi-superflare-penuh-misteri)
 
-- allesoversterrenkunde.nl  
+- allesoversterrenkunde.nl(オランダ語)  
 Nieuwe telescoop registreert supervlam op nabije ster  
 [https://www.allesoversterrenkunde.nl/!/actueel/nieuws/_detail/gli/nieuwe-telescoop-registreert-supervlam-op-nabije-s/](https://www.allesoversterrenkunde.nl/!/actueel/nieuws/_detail/gli/nieuwe-telescoop-registreert-supervlam-op-nabije-s/)
 
