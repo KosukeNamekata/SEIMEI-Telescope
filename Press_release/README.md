@@ -29,6 +29,7 @@
 [https://mainichi.jp/english/articles/20200710/p2a/00m/0na/004000c](https://mainichi.jp/english/articles/20200710/p2a/00m/0na/004000c)  
 (<[Yahoo](https://news.yahoo.co.jp/articles/cb351fbfedf06f215b6824812f1c4f854c809c46)>
 <[Yahoo's pdf](https://drive.google.com/file/d/1UFrbMCXrKb7qL9QjqeZRP3rwpuVb7317/view?usp=sharing)>
+<[新聞記事](https://drive.google.com/file/d/1GGhPihRW7LwMaQpcmvOSf8vOroOp-H0q/view?usp=sharing)>
 <[新聞記事(写真)](https://drive.google.com/file/d/1B6bJ4pV0Pr0i1kP_BpPjf_OSs8twWk4z/view?usp=sharing)>)  
 
 - 山陽新聞(2020/7/10)  
@@ -43,21 +44,27 @@
 [https://www.kyoto-np.co.jp/articles/-/303544](https://www.kyoto-np.co.jp/articles/-/303544)  
 (<[Yahoo](https://news.yahoo.co.jp/articles/238303507809c1323ae05c22f1f52bf49455fa1b)>
 <[Yahoo's pdf](https://drive.google.com/file/d/1rL5Hs2IUjk6SvSxwlD-V9UJrQIW2YmaW/view?usp=sharing)>
-<[新聞記事1(スキャン)](https://drive.google.com/file/d/18zBtwpKwgaJjMM9gtw8BoPbetrUcIg6E/view?usp=sharing)>
-<[新聞記事2(写真)](https://drive.google.com/file/d/1FYdnaJhQxXZ_lZNKhneBTgHdTnV44Q-0/view?usp=sharing)>)
+<[新聞記事](https://drive.google.com/file/d/18zBtwpKwgaJjMM9gtw8BoPbetrUcIg6E/view?usp=sharing)>
+<[新聞記事(写真)](https://drive.google.com/file/d/1FYdnaJhQxXZ_lZNKhneBTgHdTnV44Q-0/view?usp=sharing)>)
 
 - 日刊工業新聞(2020/7/10 25面)  
 京大・国立天文台、「スーパーフレア」観測　磁気変動の影響評価  
 [https://www.nikkan.co.jp/articles/view/00564073?twinews=20200710](https://www.nikkan.co.jp/articles/view/00564073?twinews=20200710)  
-(<[pdf](https://drive.google.com/file/d/1yN9NEfcviqZlBaFQts5z_1KJxMsKVC1R/view?usp=sharing)>)
+(<[pdf](https://drive.google.com/file/d/1yN9NEfcviqZlBaFQts5z_1KJxMsKVC1R/view?usp=sharing)>
+<[新聞記事(一面目次)](https://drive.google.com/file/d/1GGhPihRW7LwMaQpcmvOSf8vOroOp-H0q/view?usp=sharing)>
+<[新聞記事](https://drive.google.com/file/d/1mm2kawSge4rF81hlyAdN4sl515yDZ0pI/view?usp=sharing)>)
 
 - 読売新聞(2020/7/10)  
 スーパーフレア観測成功、京大など…しし座の恒星、太陽フレアの２０倍  
-[https://www.yomiuri.co.jp/local/kansai/news/20200710-OYO1T50012/](https://www.yomiuri.co.jp/local/kansai/news/20200710-OYO1T50012/)
+[https://www.yomiuri.co.jp/local/kansai/news/20200710-OYO1T50012/](https://www.yomiuri.co.jp/local/kansai/news/20200710-OYO1T50012/)  
+(<[新聞記事](https://drive.google.com/file/d/1jBAPioualiMOhwYzdiQ1vb0r6gKAi5Ml/view?usp=sharing)>)
 
 - 産経新聞(2020/7/10 24面)  
+恒星爆発現象観測 京大望遠鏡「せいめい」  
+(<[新聞記事](https://drive.google.com/file/d/1mkt8w-1G3aoFgOYEWDRkmtyL9tThP69t/view?usp=sharing)>)
 
 - しんぶん赤旗  
+超巨大フレア観測 京大「せいめい」望遠鏡 系外惑星の生命探る一歩に  
 (<[新聞記事](https://drive.google.com/file/d/1crhAQkdsbtVpr3-ptCkhXCOCtLgM1p16/view?usp=sharing)>)
 
 
