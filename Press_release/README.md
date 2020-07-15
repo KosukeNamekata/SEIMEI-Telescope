@@ -67,6 +67,10 @@
 超巨大フレア観測 京大「せいめい」望遠鏡 系外惑星の生命探る一歩に  
 (<[新聞記事](https://drive.google.com/file/d/1crhAQkdsbtVpr3-ptCkhXCOCtLgM1p16/view?usp=sharing)>)
 
+- 財経新聞  
+京大など、スーパーフレアを検出　最大級の太陽フレアの20倍程度  
+[https://www.zaikei.co.jp/article/20200715/576103.html](https://www.zaikei.co.jp/article/20200715/576103.html)  
+
 
 #### 通信社
 
@@ -114,6 +118,14 @@
 [https://astropics.bookbright.co.jp/ad-leonis](https://astropics.bookbright.co.jp/ad-leonis)
 
 #### ネット記事(転載)
+
+- オリコン  
+京大など、スーパーフレアを検出 最大級の太陽フレアの20倍程度  
+[https://www.oricon.co.jp/article/1217109/](https://www.oricon.co.jp/article/1217109/)
+
+- ニコニコニュース  
+京大など、スーパーフレアを検出 最大級の太陽フレアの20倍程度  
+[https://news.nicovideo.jp/watch/nw7654485?news_ref=top_60](https://news.nicovideo.jp/watch/nw7654485?news_ref=top_60)
 
 - ニュースイッチ  
 [https://newswitch.jp/p/22967](https://newswitch.jp/p/22967)
