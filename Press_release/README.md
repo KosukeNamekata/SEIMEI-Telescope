@@ -17,6 +17,8 @@
 [日本語] [https://www.kwasan.kyoto-u.ac.jp/](https://www.kwasan.kyoto-u.ac.jp/)  
 [英語] [https://www.kwasan.kyoto-u.ac.jp/index_en.html](https://www.kwasan.kyoto-u.ac.jp/index_en.html)
 
+- 西はりま天文台Webpage  
+[http://www.nhao.jp/research/news/news200710.html](http://www.nhao.jp/research/news/news200710.html)
 
 ## 日本の記事
 
@@ -137,6 +139,14 @@
 [http://www.optronics-media.com/news/20200710/65966/](http://www.optronics-media.com/news/20200710/65966/)
 
 ## 英文の記事
+
+#### テレビ放送系
+
+- "Enormous 'Superflare' Spotted on Nearby Star"(Web上の動画あり)  
+(<[HP](https://www.wfaa.com/video/tech/science/amaze-lab/enormous-superflare-spotted-on-nearby-star/609-02c0be96-99ca-4ae6-8d7a-d93ffb42e221)>
+<[Youtube](https://www.youtube.com/watch?v=ecVsN1ASe7A)>
+<[動画](https://drive.google.com/file/d/1p4HsiF_2K8P7F6mWQjTWKElxpmYsBTbw/view?usp=sharing)>)
+
 
 #### 天文系ネット記事
 
