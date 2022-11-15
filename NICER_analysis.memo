@@ -6,6 +6,9 @@ NICERのデータ解析
 enoto-san"s hack page
 https://hackmd.io/@tenoto/Hy236Zofw
 
+nicer analysis workshop
+https://heasarc.gsfc.nasa.gov/docs/nicer/data_analysis/workshops/nicer_workshops_2021.html
+
 ●まずはHEASOFTをインストールする
 （自分はmacでもlinux debianでもどっちでもできた）
 https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html
@@ -27,7 +30,7 @@ alias heainit=". $HEADAS/headas-init.sh"
 heainit
 
 
-●caldb: キャリブレーションのライブラリを押す
+●caldb: キャリブレーションのライブラリを入れる
 mkdir ~/caldb
 - nicer HPからgoodfile***tar.gzをとってくる
 https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/nicer/
@@ -41,7 +44,13 @@ $ wget https://heasarc.gsfc.nasa.gov/FTP/caldb/software/tools/caldb_setup_files.
 $ tar -zxvf caldb_setup_files.tar.Z
 
 - チェック方法
-$caldbinfo INST nicer xti
+$ caldbinfo INST nicer xti
+$ quzcif NICER XTI - - ALIGNMENT now now -
+
+
+●nibackgen3c50
+https://heasarc.gsfc.nasa.gov/docs/nicer/tools/nicer_bkg_est_tools.html
+#backgroudn model package
 
 
 ●解析の大体の流れ
