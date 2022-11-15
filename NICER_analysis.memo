@@ -1,5 +1,95 @@
 NICERのデータ解析
 
+...updated at 2022/11/15
+
+参考にしたHP
+enoto-san"s hack page
+https://hackmd.io/@tenoto/Hy236Zofw
+
+●まずはHEASOFTをインストールする
+（自分はmacでもlinux debianでもどっちでもできた）
+https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html
+#あまり深く考えずに、コマンドを打ち続けていけばokだった。
+
+.bashrcに以下を書き込むことを忘れずに
+#HEASOFT INSTALL
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
+export FC=/usr/bin/gfortran
+export PERL=/usr/bin/perl
+export PYTHON=/usr/bin/python3
+
+export HEADAS=/home/kosuke/heasoft-6.30.1/x86_64-pc-linux-gnu-libc2.31/
+export CALDB=/home/kosuke/caldb
+source $CALDB/software/tools/caldbinit.sh
+
+alias heainit=". $HEADAS/headas-init.sh"
+heainit
+
+
+●caldb: キャリブレーションのライブラリを押す
+mkdir ~/caldb
+- nicer HPからgoodfile***tar.gzをとってくる
+https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/nicer/
+#ISSの姿勢の補正や、スペクトル解析に必要なレスポンスファイル（エネルギーの応答関数といったところ）など必要な較正ファイル
+
+- 設定方法
+https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/caldb_intro.html
+$ export CALDB="/Users/kosuke/caldb"
+$ cd CALDB
+$ wget https://heasarc.gsfc.nasa.gov/FTP/caldb/software/tools/caldb_setup_files.tar.Z
+$ tar -zxvf caldb_setup_files.tar.Z
+
+- チェック方法
+$caldbinfo INST nicer xti
+
+
+●解析の大体の流れ
+1. データのキャリブレーション(nicerl2)
+2. BJD補正
+3. イベントデータ(.evt) → (nicer独自のosoft) → cleaned event data  → (xselect) → LC file, PI file
+4.1 PI file  → (xspec) → spectral analysis
+4.2 LC file  → (xronos, lcurve) → 時系列データ解析
+
+
+1. nicerl2でのキャリブレーション
+
+- 2020年
+@2100410109の置いてあるフォルダで
+$ nicerl2 2100410109 nimaketime_gtiexpr="'(FPM_OVERONLY_COUNT < (1.52*COR_SAX**(-0.633)))&&(FPM_OVERONLY_COUNT < 0.9)&&(ST_VALID==1)'"
+とするだけzip fileは解凍しなくてもいいポイ。
+
+- 2022年
+$ nicerl2 indir=5202490102 clobber=YES niprefilter2_coltypes=base,3c50 detlist="launch,-14,-34"
+#バッド検出器などを除いてキャリブレーションしてくれるらしい
+
+
+2. Barycentric julian date
+
+・Xselectで抽出する前に、barycentric julian dateに直しておく必要がある。
+
+$ barycorr infile=adleo_all.evt outfile=adleokgfilt_bary.evt orbitfiles=@filename.list ra=10:19:36.28 
+dec=+19:52:12 refframe=ICRS
+
+#RA and Dec should be the target coordinates in J2000 in degrees
+#Here $obs is the observation directory name and $obsroot is the observation number
+#Use the .orb orbit file for input, and not the filter file (.mkf). The .orb file has the highest precision. 
+#In rare cases, the standard filtered orbit solution may not be functioning. 
+#In that case the SPS_ORBIT extension can be used ni${obsroot}.orb[SPS_ORBIT]
+#HIGHLY RECOMMENDED: use refframe=ICRS, which selects a modern ephemeris. 
+#If you don't do this, there can be millisecond-errors! Deepto Chakrabarty translated 
+#new updated JPL ephemerides DE421 and DE430, which are now included in the HEASoft 6.22 distribution. 
+#Select them with the ephem=JPLEPH.430 to select DE430.
+
+＄ barycorr infile=./${TIME}/xti/event_cl/ni${TIME}_0mpu7_cl.evt 
+outfile=./${TIME}/xti/event_cl/ni${TIME}_0mpu7_cl_bary.evt 
+orbitfiles="./${TIME}/auxil/ni${TIME}.orb" ra=${RA} dec=${DEC} refframe=ICRS
+
+
+
+***********Memo before 2020************
+
+
 #聞くべきこと
 ・barycorr のtaskでのインプットファイル.orbのありか。
 -> ダウンロードしなお
@@ -8,11 +98,6 @@ NICERのデータ解析
 ・*.txtに時間binを入れた場合の、shell commandの書き方？
 -> スザクのHPみてチェック
 
-
-・
-@2100410109の置いてあるフォルダで
-$ nicerl2 2100410109 nimaketime_gtiexpr="'(FPM_OVERONLY_COUNT < (1.52*COR_SAX**(-0.633)))&&(FPM_OVERONLY_COUNT < 0.9)&&(ST_VALID==1)'"
-とするだけzip fileは解凍しなくてもいいポイ。
 
 *モデル化
 XSPEC12>mo TBabs*(apec+apec+apec)
@@ -90,23 +175,6 @@ $ gcc hello.c
 $ ./a.out
 
 
-・キャリブレーションデータの設定: 
-- キャリブレーションデータCALDB(HEASARC's calibration database)
-https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/nicer/
-#ISSの姿勢の補正や、スペクトル解析に必要なレスポンスファイル（エネルギーの応答関数といったところ）など必要な較正ファイル
-
-
-ー 設定方法
-https://heasarc.gsfc.nasa.gov/docs/heasarc/caldb/caldb_intro.html
-$ export CALDB="/Users/kosuke/caldb"
-$ cd CALDB
-$ wget https://heasarc.gsfc.nasa.gov/FTP/caldb/software/tools/caldb_setup_files.tar.Z
-$ tar -zxvf caldb_setup_files.tar.Z
-
-- チェック方法
-$caldbinfo INST nicer xti
-
-
 ・データのありか・種類
 - データのありか
 https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dnicermastr&Action=More+Options
@@ -126,16 +194,6 @@ backadleokgfilt.pha #.pha (background's spectra data)
 
 
 
-
-
-＊解析の大体の流れ
-1. データのキャリブレーション
-2. BJD補正
-3. イベントデータ(.evt) → (nicer独自のosoft) → cleaned event data  → (xselect) → LC file, PI file
-4.1 PI file  → (xspec) → spectral analysis
-4.2 LC file  → (xronos, lcurve) → 時系列データ解析
-
-
 ＊XSELECT in HEASoft Software
 
 ・NICER解析
@@ -144,28 +202,6 @@ https://heasarc.gsfc.nasa.gov/docs/nicer/nicer_analysis.html
 (参考) SUZAKUの解析マニュアルを見るとわかりやすい。
 http://cosmic.riken.jp/suzaku/help/guide/fstep_web/fstep.html
 
-
-
-2. Barycentric julian date
-
-・Xselectで抽出する前に、barycentric julian dateに直しておく必要がある。
-
-$ barycorr infile=adleo_all.evt outfile=adleokgfilt_bary.evt orbitfiles=@filename.list ra=10:19:36.28 
-dec=+19:52:12 refframe=ICRS
-
-#RA and Dec should be the target coordinates in J2000 in degrees
-#Here $obs is the observation directory name and $obsroot is the observation number
-#Use the .orb orbit file for input, and not the filter file (.mkf). The .orb file has the highest precision. 
-#In rare cases, the standard filtered orbit solution may not be functioning. 
-#In that case the SPS_ORBIT extension can be used ni${obsroot}.orb[SPS_ORBIT]
-#HIGHLY RECOMMENDED: use refframe=ICRS, which selects a modern ephemeris. 
-#If you don't do this, there can be millisecond-errors! Deepto Chakrabarty translated 
-#new updated JPL ephemerides DE421 and DE430, which are now included in the HEASoft 6.22 distribution. 
-#Select them with the ephem=JPLEPH.430 to select DE430.
-
-＄ barycorr infile=./${TIME}/xti/event_cl/ni${TIME}_0mpu7_cl.evt 
-outfile=./${TIME}/xti/event_cl/ni${TIME}_0mpu7_cl_bary.evt 
-orbitfiles="./${TIME}/auxil/ni${TIME}.orb" ra=${RA} dec=${DEC} refframe=ICRS
 
 
 
