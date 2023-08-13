@@ -63,6 +63,9 @@ https://heasarc.gsfc.nasa.gov/docs/nicer/tools/nicer_bkg_est_tools.html
 
 1. nicerl2でのキャリブレーション
 
+-2023年のHEASOFT6.31から、geomagの設定をしなければいけなくなった。nicerl2を普通に走らせると、以下のエラーが出る。
+https://heasarc.gsfc.nasa.gov/docs/nicer/analysis_threads/nicer-setup/
+
 - 2020年
 @2100410109の置いてあるフォルダで
 $ nicerl2 2100410109 nimaketime_gtiexpr="'(FPM_OVERONLY_COUNT < (1.52*COR_SAX**(-0.633)))&&(FPM_OVERONLY_COUNT < 0.9)&&(ST_VALID==1)'"
