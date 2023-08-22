@@ -75,6 +75,10 @@ $ nicerl2 2100410109 nimaketime_gtiexpr="'(FPM_OVERONLY_COUNT < (1.52*COR_SAX**(
 $ nicerl2 indir=5202490102 clobber=YES niprefilter2_coltypes=base,3c50 detlist="launch,-14,-34"
 #バッド検出器などを除いてキャリブレーションしてくれるらしい
 
+-2023年7月以降
+フレアなどの飛びが気になる場合:
+$ nicerl2 indir=5202490102 overonly_range=0-5 cor_range="1.5-*" clobber=YES niprefilter2_coltypes=base,3c50 detlist="launch,-14,-34"
+https://heasarc.gsfc.nasa.gov/docs/nicer/analysis_threads/flares/
 
 2. Barycentric julian date
 
