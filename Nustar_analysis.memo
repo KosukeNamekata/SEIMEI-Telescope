@@ -2,12 +2,19 @@
 Nustar memo
 2024年4月6日: 志達さんから教えてもらった
 
+解説はここを見ること
 https://heasarc.gsfc.nasa.gov/docs/nustar/analysis/nustar_quickstart_guide.pdf
 
+<準備>
 gpgはhomebrewでinstallできた
 brew install pgp
 
+<データのダウンロード>
+wget --progress=bar -nH --no-check-certificate --cut-dirs=6 -r -l0 -c -N -np -R 'index*' -erobots=off --retr-symlinks https://heasarc.gsfc.nasa.gov/FTP/nustar/data/encrypted/10/3/31002002001/
 Passkey: 4ea710a2b208a9bc
+
+<暗号化解除>
 gpg ./31002002001/event_uf/nu31002002001A_uf.evt.gz.gpg
 
+<パイプラインを通してイベントファイルを更新>
 nupipeline indir=./31002002001/ steminputs=nu31002002001 outdir=./out > nupipeline_log.txt
