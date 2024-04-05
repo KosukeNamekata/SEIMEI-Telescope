@@ -1,0 +1,13 @@
+
+Nustar memo
+2024年4月6日: 志達さんから教えてもらった
+
+https://heasarc.gsfc.nasa.gov/docs/nustar/analysis/nustar_quickstart_guide.pdf
+
+gpgはhomebrewでinstallできた
+brew install pgp
+
+Passkey: 4ea710a2b208a9bc
+gpg ./31002002001/event_uf/nu31002002001A_uf.evt.gz.gpg
+
+nupipeline indir=./31002002001/ steminputs=nu31002002001 outdir=./out > nupipeline_log.txt
